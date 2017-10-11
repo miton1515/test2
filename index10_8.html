@@ -1,0 +1,5137 @@
+﻿<!DOCTYPE html>
+<html xml:lang="ja-JP">
+
+	<!--ロード画面を作ろうね-->
+	<div id="loader-bg">
+		<div id="loader">
+				<img src="img-loading.gif" width="80" height="80" alt="Now Loading..." />
+				    <p>Now Loading...</p>
+					<script>
+							function loading_on(){
+							
+							document.getElementById("loader-bg").style.display = "block";
+							document.getElementById("loader").style.display = "block";
+							console.log("ロードを開始！");
+							}
+							function loading_off(){
+							document.getElementById("loader-bg").style.display = "none";
+							document.getElementById("loader").style.display = "none";
+							console.log("ロードを終了！");
+							}
+					</script>
+		</div>
+	</div>
+
+	
+	<div id="loader-bg">
+		<div id="loader">
+				<img src="img-loading.gif" width="80" height="80" alt="Now Loading..." />
+				    <p>Now Loading...</p>
+					<script>
+							function loading_on2(){
+							
+							document.getElementById("loader-bg").style.display = "block";
+							document.getElementById("loader").style.display = "block";
+							console.log("ロードを開始！");
+							}
+							function loading_off2(){
+							document.getElementById("loader-bg").style.display = "none";
+							document.getElementById("loader").style.display = "none";
+							console.log("ロードを終了！");
+							}
+					</script>
+		</div>
+	</div>
+
+
+<!--//________________________バージョンを登録を推したときに開くウィンドウ-->
+
+	<div class="windowBg">
+	<div class="windowBody well">						
+		
+		<script>
+
+var window_illust_id = 1;
+var window_layer_id = 0;
+var window_version_id = 0;
+
+
+
+
+
+
+//					var value1 = "イラスト" + sample12_form.CallIllustId.value + "のレイヤー" + sample11_form.calllayernum.value + "バージョン" +  sample10_form.callversionnum.value +"の子として登録します";
+					var value1 ="";
+
+					var alert1 ='	<div>' + value1 + '</div><input type="button"id="window_button"  class="clear" onclick ="javascript:close5()"; value="アクティブレイヤーを新規バージョンとして登録する">';
+					document.write(value1 + window_illust_id);
+					document.write(alert1);
+	
+					function close5(){
+							$('.windowBg').hide();
+						setTimeout("illust_open()",3000);
+					}
+		
+		</script>
+						
+						
+				<p>背景をクリックしても閉じます</p>
+	</div>
+				<a href="#" class="btn btn-default btnClose">キャンセル</a>
+	</div>
+
+
+
+<!--	//___________________________イラストを登録を推したときに開くウィンドウ-->
+
+<div class="windowBg2">
+	<div class="windowBody2 well2">						
+		
+		<script>
+//					var value1 = "イラスト" + sample12_form.CallIllustId.value + "のレイヤー" + sample11_form.calllayernum.value + "バージョン" +  sample10_form.callversionnum.value +"の子として登録します";
+//					var value2 ="bbbb";
+;
+					var alert2 ='<div></div><input type="button"id="window_button2"  class="clear"   onclick ="javascript:close6()";   value="新規イラストを投稿する">';
+					//document.write(value2 + window_illust_id);
+					document.write(alert2);
+
+					function close6(){
+							$('.windowBg2').hide();
+						setTimeout("illust_open()",3000);
+					}
+		
+		</script>
+
+						
+						
+			<br></br><p>背景をクリックしても閉じます</p>
+	</div>
+				<a href="#" class="btn2 btn-default2 btnClose2">キャンセル</a>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div style="position: relative; text-align:center; margin-left:auto;margin-right:auto; text-align:left;top: 30px;">
+	<head>
+<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet"type="tect/css"href="test.css">
+	<script src="jquery-treeview-master/jquery.treeview.js" type="text/javascript"></script>
+	<script src="jquery-treeview-master/demo/jquery.cookie.js"></script>
+	<script src="jquery-treeview-master/demo/demo.js" type="text/javascript""></script>
+	<script src="jquery-treeview-master/jquery.treeview.css"></script>
+	<link rel="stylesheet" href="jquery-treeview-master/jquery.treeview.css">
+
+
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="window.css"/>
+	<link rel="stylesheet" href="window2.css"/>
+	<link rel="stylesheet" href="button.css"/>
+	<link rel="stylesheet" href="loading.css"/>
+
+	<!--
+	<link rel="stylesheet" type="text/css" href="dist/themes/default/style.min.css">
+	<script type="text/javascript" src="dist/jstree.js"></script>
+	-->
+
+		<script src="canvg-master/canvg.js"></script>
+		<script src="canvg-master/StackBlur.js"></script>
+		<script src="canvg-master/rgbcolor.js"></script>
+		
+
+		<script>
+
+
+
+
+$(document).ready(function(){
+			$("#TreeView").treeview();
+		});
+
+
+$(document).ready(function(){
+			$("#browser").treeview();
+		});
+
+
+
+
+//$(function(){$('#jstree_demo_div').jstree();});
+		
+		</script>
+
+
+
+
+		<h1 style="position: relative; left:10%; top: -30px; color:white;  font-family:'Impact';  
+	text-shadow:
+	-1px -1px 0 #2291e6,
+	1px -1px 0 #2291e6,
+	-1px 1px 0 #2291e6,
+	1px 1px 0 #2291e6;" >Illust Forest</h1>
+<title>IllustForest</title>
+
+<style>
+.scr{
+		overflow: scroll;
+		width: 1116px;
+		height:400px;
+		background-color: #EDFFFB;
+		
+}
+
+</style>
+</head>
+<body>
+<main>
+
+
+
+
+			<svg id="drawingCanvas3" width="1116" height="600"style="position: absolute; left:10%; top:30px; border:1px solid #2291e6;"></svg>
+
+			<svg id="drawingCanvas2" width="1116" height="600" style="position: absolute; left: 10%; top: 30px;"></svg>
+
+			<svg id="drawingCanvas" width="1116" height="600"style="position: absolute; left: 10%; top: 30px;"></svg>
+
+		</div>
+		<div id="buttons" style="position: relative; left:10%; top: 630px;">
+
+<div style = "margin:auto">
+
+	<div style = "position: absolute; top:0px; left:100px;" >
+	<!--<p>--><font style ="color:#2291e6">COLOR:</font> <input type="color" class="color" value="#666666">
+	<label><input type="radio" name="drawtype" value="line" checked><font style ="color:#2291e6"> LINE</font></label>
+	<label><input type="radio" name="drawtype" value="paint"><font style ="color:#2291e6"> PAINT </font> </label>
+
+		
+	<font  style= "color:#2291e6">  PENSIZE:</font><input type="range" name="num" min="1" max="10" step="1" value="3" style= "position: absolute; top:0px; left:300px; width: 30%"  
+						 onchange="changeValue(this.value)"><span id="val">3</span>
+					<script type="text/javascript">
+							function changeValue(value) {
+	  								  document.getElementById("val").innerHTML = value;
+							pensizekun = value;
+							}
+					</script>
+	
+	
+
+	<div  style = "position: absolute; top:0px; left:380px;"  >
+	
+		<img onclick="undo2()" style="transform: rotate(270deg); position: absolute; top:0px; left:17px;"  width = "30" height = "30" src="hidari.jpg" name ="undo">
+		<img onclick="redo2()" style="transform: rotate(90deg); position: absolute; top:0px; left:50px;"  width = "30" height = "30" src="migi_dark.jpg" name ="redo">
+		<img onclick="eraser2()" style="transform: rotate(90deg) ;  position: absolute; top:0px; left:84px;"   ;" width="30" height="30" src="eraser.jpg" name="eraser">
+	</div>
+	
+	<input type="button" class="clear square_btn2" style = "background-color:white;  position: absolute; top:0px; left:500px;"    id="sakujo" value="レイヤをクリア">
+	
+	</div>
+		<div style = "position: absolute; top:0px; left:839px;" >
+
+				
+				<input type="button" class="clear square_btn"  style = "background-color:white" id="layer03" value="layer3">
+				<input type="button" class="clear square_btn" style = "background-color:white;"  id="layer02" value="layer2">
+				<input style = "background-color:#9ed2f9" type="button" class="clear square_btn" id="layer01" value="layer1">
+
+			</div>
+</div>
+
+<div style="position: relative; z-index:-10; text-align:center; margin-left:auto;margin-right:auto; text-align:left;top: -330px;">
+
+
+		
+		<div id="forms" style="position: relative; left:0%; top: 530px;">
+		<form name="Sample1_form">
+			<input type="text" name="textbox">
+			<!--			<input type="button" value="バージョンID" onclick="Sample1()"> -->
+		</form>
+
+
+		<form name="Sample2_form" action="Sample2.html">
+			<input type="text" name="textbox">
+			<!--< input type="button" value="バージョンナンバー" onclick="Sample2()"> -->
+		</form>
+
+
+		
+		<!--こっから怒涛のフォーム宣言。呼び出すバージョンナンバーを入力-->
+<!--
+		<form name="Sample3_form" action="Sample3.html">
+			<input type="text" name="textbox">
+			<input type="button" value="よびたいバージョン" onclick="Sample3()">
+		</form>
+		
+		-->
+		<form name="Sample4_form" action="Sample4.html">
+			<input type="text" name="textbox">
+			<!--<input type="button" value="レイヤID" onclick="Sample4()">-->
+		</form>
+
+
+		<form name="Sample5_form" action="Sample5.html">
+			<input type="text" name="textbox">
+			<!--<input type="button" value="レイヤ名" onclick="Sample5()">-->
+		</form>
+		
+		
+		<form name="Sample6_form" action="Sample6.html">
+				<input type="text" name="textbox">
+				<!--<input type="button" value="イラストID" onclick="Sample6()"> -->
+		</form>
+		
+		
+		<form name="Sample7_form" action="Sample7.html">
+			<input type="text" name="textbox">
+			<!--<input type="button" value="イラスト名" onclick="Sample7()">-->
+		</form>
+
+
+		<form name="Sample8_form" action="Sample8.html">
+			<input type="text" name="textbox">
+			<!--<input type="button" value="作者名" onclick="Sample8()"> -->
+		</form>
+
+		
+		<div style="position: absolute; left: 40%; top: 30px;">
+
+
+		<!--こっからは呼びたいバージョンの設定-->
+		<form name="Sample9_form" action="Sample9.html">versionID!
+			<input type="text" name="CallVersionId">
+			<!--<input type="button" value="よびたいバージョンID" onclick="Sample9()">-->
+		</form>
+
+
+		<form name="Sample10_form" action="Sample10.html">versionNumber
+			<input type="text" name="CallVersionNum">
+			<!--	<input type="button" value="よびたいバージョンナンバー" onclick="Sample10()"> -->
+		</form>
+	
+		
+		<form name="Sample11_form" action="Sample11.html">layerID
+			<input type="text" name="CallLayerNum">
+			<!--	<input type="button" value="よびたいレイヤのID" onclick="Sample11()"> -->
+		</form>
+	
+		
+		<form name="Sample12_form" action="Sample12.html">illustID
+			<input type="text" name="CallIllustId">
+			<!--<input type="button" value="よびたいイラストのID" onclick="Sample12()"> -->
+		</form>
+
+		
+		<form id="version_id" action="Sample12.html">
+			<input type="text" name="CallIllustId">
+			<!--<input type="button" value="よびたいイラストのID" onclick="Sample12()"> -->
+
+	   <!--			<div id="illust_thum1"></div> --><!--//これはイラストの調整のためのごみ-->
+			<div id="illust_thum0"></div><!--//これはイラストの調整のためのごみ-->
+	
+		
+		</form>
+		</div>
+	
+		</div>
+
+		
+		</div>
+<!--	</section> -->
+</main>
+
+<!--
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+-->
+<script>
+/////////////////////////
+//var penSize = 50;
+
+
+
+	var pensizekun = "3";
+
+	var svgElm = $("#drawingCanvas"), //SVG要素を得
+		movetoX = 0, //開始点(横方向)の初期化
+		movetoY = 0, //開始点(縦方向)の初期化
+		linetoStr = "", //LineToコマンド値の初期化
+		strokeColor = "#666666", //描画色の初期化
+		drawType = ""; //塗りつぶしの初期化
+	var now_layer_data =$(svgElm).html();
+	var now_layer =$(svgElm).html();
+	var undo_layer_data =$(svgElm).html();
+	var undo_layer_number = 1;
+	var redo_layer_data =$(svgElm).html();
+	$(function(){
+
+	//初期設定
+	/*var svgElm = $("#drawingCanvas"), //SVG要素を取得
+		movetoX = 0, //開始点(横方向)の初期化
+		movetoY = 0, //開始点(縦方向)の初期化
+		linetoStr = "", //LineToコマンド値の初期化
+		strokeColor = "#666666", //描画色の初期化
+		drawType = ""; //塗りつぶしの初期化
+	var now_layer_data =$(svgElm).html();
+	var now_layer =$(svgElm).html();
+	*///////
+		laynum =1; //レイヤナンバー（ボタンを押すと書き換わり、自分がいまどのレイヤーにいるのかがわかる）
+		/*じゃあこっからボタンを押すとｓｖｇELMがdrawingCanvasからdrawingCanvas2に代わるように設定します*/
+$(function() {
+		$('#layer01').click(function() {
+		svgElm = $("#drawingCanvas");
+		var p =$("#drawingCanvas").html();
+
+		undo_layer_number = laynum;
+		
+		
+		laynum = 1;
+		console.log("1!");
+				var button1 = document.getElementById("layer01");
+				button1.style.backgroundColor = '#9ed2f9';
+				var button2 = document.getElementById("layer02");
+				button2.style.backgroundColor = 'white';
+				var button3 = document.getElementById("layer03");
+				button3.style.backgroundColor = 'white';
+
+		
+		now_layer_data =$(svgElm).html();//今のレイヤがもっているデータ
+		console.log(now_layer_data)//を表示
+
+							if(undo_layer_number != laynum){
+
+	document.undo.src = "migi_dark.jpg";
+	document.redo.src = "migi_dark.jpg";
+	redo_click = 1;
+	undo_click = 1;
+					
+					}
+
+
+		
+		
+		});
+	});
+$(function() {
+		$('#layer02').click(function() {
+		svgElm = $("#drawingCanvas2");
+		var p =$("#drawingCanvas2").html();
+		
+		undo_layer_number = laynum;
+
+		laynum = 2;
+		console.log("2!");
+
+				var button1 = document.getElementById("layer01");
+				button1.style.backgroundColor = 'white';
+				var button2 = document.getElementById("layer02");
+				button2.style.backgroundColor = '#9ed2f9';
+				var button3 = document.getElementById("layer03");
+				button3.style.backgroundColor = 'white';
+
+
+		
+		
+		now_layer_data =$(svgElm).html();//今のレイヤがもっているデータ
+		console.log(now_layer_data)//を表示
+
+
+							if(undo_layer_number != laynum){
+
+	document.undo.src = "migi_dark.jpg";
+	document.redo.src = "migi_dark.jpg";
+	redo_click = 1;
+	undo_click = 1;
+					
+					}
+
+
+
+
+		
+		});
+	});
+
+$(function() {
+		$('#layer03').click(function() {
+				svgElm = $("#drawingCanvas3");
+		var p =$("#drawingCanvas3").html();
+
+		undo_layer_number = laynum;
+		
+		laynum = 3;
+		console.log("3!");
+
+				var button1 = document.getElementById("layer01");
+				button1.style.backgroundColor = 'white';
+				var button2 = document.getElementById("layer02");
+				button2.style.backgroundColor = 'white';
+				var button3 = document.getElementById("layer03");
+				button3.style.backgroundColor = '#9ed2f9';
+
+
+		
+		now_layer_data =$(svgElm).html();//今のレイヤがもっているデータ
+		console.log(now_layer_data)//を表示
+
+									if(undo_layer_number != laynum){
+
+	document.undo.src = "migi_dark.jpg";
+	document.redo.src = "migi_dark.jpg";
+	redo_click = 1;
+	undo_click = 1;
+					
+					}
+
+
+
+		
+		
+		});
+	});
+
+
+$(function() {
+		$('#sakujo').click(function() {
+		console.log("clear");
+
+		undo_layer_data = $(svgElm).html();
+
+		svgElm.html("");          
+		});
+	});
+
+	var m = 1;
+		/////
+	/* ドラッグ開始 */
+	$("#drawingCanvas").mousedown(function(event){
+
+
+
+		undo_layer_data =$(svgElm).html();//クリックする寸前のデータundo_layer_dataに保存するよ
+//		console.log("undo_layer_data = " + undo_layer_data)//を表示
+
+
+
+
+		event.preventDefault();
+		strokeColor = $(".color").val(); //inputの色の設定を取得
+
+		//PAINT(value: paint)が選択されていたら、塗りつぶし色を設定
+		if($("input[name='drawtype']:checked").val() == "paint")
+			drawType = strokeColor;
+		else
+			drawType = "none";
+
+		movetoX = parseInt(event.pageX - svgElm.position().left); //SVG上のマウス座標(横方向)の取得
+		movetoY = parseInt(event.pageY - svgElm.position().top); //SVG上のマウス座標(縦方向)の取得
+		var pathElm = document.createElementNS("http://www.w3.org/2000/svg", "path"); //SVGのpath要素を作成                                               //ここ！まずパス要素がなんなのかようわかってない
+      svgElm.append(pathElm); //SVGに作成したpathを追加        //ここ！
+		//追加したpathの各属性を設定
+      svgElm.find("path:last").attr({              //ここ！
+			"d": "", //pathデータ
+			"fill": drawType, //塗りつぶし
+			"stroke": strokeColor, //線の色
+			"stroke-width":pensizekun, //線の太さ
+			"stroke-linecap": "round" //線の端を丸める
+		});
+
+		var linetoX = [], //描画点の横座標の初期化
+			linetoY = [], //描画点の縦座標の初期化
+			cntMoveto = 0; //描画点のカウンターを初期化
+		linetoStr = 'M ' + movetoX + ' ' + movetoY + ' '; //d要素でpathの開始点を設定
+
+		/* ドラッグ中 */
+		$(document).on("mousemove", function(event){
+			linetoX[cntMoveto] = parseInt(event.pageX - svgElm.position().left); //SVG上のマウス座標(横方向)の取得
+			linetoY[cntMoveto] = parseInt(event.pageY - svgElm.position().top); //SVG上のマウス座標(縦方向)の取得
+			linetoStr = linetoStr + " L " + linetoX[cntMoveto] + " " + linetoY[cntMoveto]; //動いた後の新たなマウス座標を描画点として追加
+
+          svgElm.find("path:last").attr("d", linetoStr);                   //ここ！パスデータ（ｄ）にM ~~ L　～～って入れてる
+
+
+
+		//  svgElm.find("path:last").attr("stroke-width", penSize); ///ペンサイズの変更
+			cntMoveto++; //カウンターをセット
+		});
+
+		/* ドラッグ終了 */
+		$(document).on("mouseup", function(event){
+			$(document).off("mousemove"); //pahtの描画を終了
+			$(document).off("mousemup"); //pahtの描画を終了
+
+			//function now_layer_data(){
+
+			if(undo_layer_data != $(svgElm).html()){
+					redo_layer_data = now_layer_data;
+
+					//console.log("redo_layer_data = "+redo_layer_data);
+			
+			
+					now_layer_data =$(svgElm).html();//今のレイヤがもっているデータを離すたびにnow_layer_dataにどうきするよ
+
+
+
+
+
+					
+					undo_layer_number = laynum;
+//					console.log(undo_layer_number + "は一個前のレイヤ番号");
+//					console.log(laynum + "は今のレイヤ番号");
+						document.undo.src = "migi.jpg";
+					document.redo.src = "migi_dark.jpg";
+			
+					undo_click = 0;
+					redo_click = 1;  
+					}
+
+
+
+
+			//setTimeout("now_layer_data()",3000);
+			
+//			console.log(now_layer_data)//を表示
+		//penSize2 = 3;
+		});
+	});
+
+//var now_layer_data =0;
+	//CLEARボタンをクリックしたら、SVGを空にする
+/*
+$(".clear").click(function(){
+      //    svgElm.html("");                            //classがclearのやつらはこれをおすと自動で実行する
+
+//now_layer_data =$(svgElm).html();
+console.log(now_layer_data)
+//alert(p);
+
+
+//値をかきかえます
+ document.js.txtb.value = now_layer_data;
+    });
+*/
+
+});
+</script>
+
+<!--じゃあフォーム作ります
+<div id="form" style="position: relative; left:10%; top: 550px;">
+<form name="js">
+送信する情報：<input type="text" name="txtb" value=""><br>
+</div>
+-->
+<script>//フォームを書き換えるよ！
+	function tbox1(){
+	 var v =1;
+  document.js.txtb.value = v;
+}
+</script>
+
+<!--
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+-->
+<script>/*SVG要素をぶっこ抜いて送信。んで先のｐｈｐではそれを受信してｐに代入する。そのソース全部をぶっこぬいてきてSVGELMに挿入してペイントツールに表示*///<svg id="drawingCanvas3" width="958" height="480"style="position: absolute; left: 0; top: 0;"></svg>
+
+
+//フォームを作ってバージョンIDとバージョン番号などを入力させる
+	
+	var vid  = 0;
+	var vnum = 0;
+	var svgElm = $("#drawingCanvas"); //SVG要素を取得
+	var callver =0;
+	var dldata = 0;
+	var dldata_thum1 = "クリックでサムネイルを展開";
+	var dldata_thum2 = 0;
+	var dldata_thum3 = 0;
+	
+	var layer_id =0;
+	var layer_name =0;
+	var illust_id = 0;
+	var illust_name =0;
+	var author_id
+
+	function Sample1(){
+		var id = Sample1_form.textbox.value;
+		vid = id;
+		var num = Sample2_form.textbox.value;
+		vnum = num;
+/*function Sample3(){
+		var call = Sample3_form.textbox.value;
+		callver = call;
+}*/
+		layer_id = Sample4_form.textbox.value;   //ここで登録時の情報をセットしている
+		layer_name = Sample5_form.textbox.value;
+		illust_id = Sample6_form.textbox.value;
+		illust_name = Sample7_form.textbox.value;
+		author_id = Sample8_form.textbox.value;
+	}
+//<!--こっから呼びたい番号の指定のフォーム-->
+	var cverid  = 0;
+	var cvernum  = 0;
+	var clayid  = 0;
+	var cillustid  = 0;
+
+
+	function Sample9(){
+		 cverid = Sample9_form.CallVersionId.value;
+
+		 cvernum = Sample10_form.CallVersionNum.value;
+
+		 clayid = Sample11_form.CallLayerNum.value;
+
+		 cillustid = Sample12_form.CallIllustId.value;
+	};
+//<!--ここまでがフォームで呼びたい番号の設定-->
+
+	$(function() {
+		$('#button02').click(function() {
+		//var p = $("#drawingCanvas"+laynum);////////////////////////////
+		//var p = $('"#drawingCanvas"+laynum).html'();
+			var p =$(svgElm).html();
+			//console.log();
+		$.ajax({
+			type: 'POST',
+			url: 'load.php',
+			data: {
+				a:now_layer_data,
+				id:vid ,
+				num:vnum ,
+				laynum:laynum,
+				layer_id:layer_id,
+				layer_name:layer_name,
+				illust_id:illust_id,
+				illust_name:illust_name,
+				author_id:author_id
+			},
+			success: function(data) {
+				console.log('OK');
+				//svgElm.html(now_layer_data + "aaaa~~");//ｐをnow_layer_dataに変更するね11月２６14時
+				},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+	});
+});
+
+	$(function() {
+		$('#button03').click(function() {
+		$.ajax({
+			type: 'POST',
+			url: 'callingtest.php',
+			data: {
+				cverid:cverid
+	//			cvernum:cvernum,
+	//			clayid:clayid,
+	//			cillustid:cillustid
+					},
+
+			success: function(data) {
+				console.log('OK');
+			//	console.log(data);
+		dldata = data;
+			//console.log(dldata+"aaa");
+			svgElm.html(dldata);
+			
+			//svgElm.html("koko!")
+			//document.write(dldata);
+			},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+	});
+});
+/*バージョンの番号setvernum レイヤの番号setlaynum イラストの番号setillustnum*/
+/*イラスト一覧を表示する関数*/
+var setVerNum = 0;
+var setLayNum = 0;
+var setIllustNum =0;
+var CallingVersionId = 00;
+var illust_no_kazu =10000;
+
+
+var set_illust_or_version = 0;
+
+$(function window_button() {
+
+	$('#window_button').click(function(set_illust_or_version) {
+
+		
+		set_New_Version(document.Sample12_form.CallIllustId.value,document.Sample11_form.CallLayerNum.value,document.Sample10_form.CallVersionNum.value); 
+	
+	});
+});
+
+
+$(function window_button2() {
+	$('#window_button2').click(function(set_illust_or_version) {
+
+	loading_on();
+		set_new_illust();
+	
+	});
+});
+
+
+
+
+function illust_open(){//イラスト欄を更新する関数
+		$.ajax({
+			type: 'GET',
+			url: 'illust.php',
+			data: {
+			},
+			success: function(data) {
+				console.log("イラストテーブルの行数は"+data);
+				var b= "イラスト一覧<br>";
+				var i =0;
+				illust_no_kazu = data;
+				for(i =0 ; i< data ; i++){
+
+																																																								  }
+
+				b = b + '<input onclick="setNewIllust(' + (i+1) + ');" type="button" class="clear" value=イラスト' + (i+1) + 'として新規登録><br>';
+
+
+var c = 0;
+
+  				c = '<ul id="TreeView" class="filetree"></ul>'
+	 + '<ul id="browser" class="treeview"></ul>'
+	+ '<ul id="TreeView" class="filetree"></ul>';
+
+				$('div.scr').html(c);
+				//document.write("<div class=\"scr\" ></div>");
+				//document.write("<div>n</div>");
+illust_set();
+			},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+
+
+	}
+
+
+
+
+
+		var illust_image = [];
+		var illust_image_conbine = [];
+
+window.onload = function(){
+		$.ajax({
+			type: 'GET',
+			url: 'illust.php',
+			data: {
+			},
+			success: function(data) {
+				console.log("イラストテーブルの行数は"+data);
+				var b= "イラスト一覧<br>";
+				var i =0;
+				illust_no_kazu = data;
+				illust_no_kazu = parseInt(illust_no_kazu);
+
+				illust_image = new Array(illust_no_kazu);//配列を宣言/
+					  for(i =0 ; i< data ; i++){
+
+																																																								  }
+
+				b = b + '<input onclick="setNewIllust(' + (i+1) + ');" type="button" class="clear" value=イラスト' + (i+1) + 'として新規登録><br>';
+
+
+var c = 0;
+
+  				c = '<ul id="TreeView" class="filetree"></ul>'
+	 + '<ul id="browser" class="treeview"></ul>'
+	+ '<ul id="TreeView" class="filetree"></ul>';
+
+				$('div.scr').html(c);
+				//document.write("<div class=\"scr\" ></div>");
+				//document.write("<div>n</div>");
+//illust_set();
+ima_hikidasita_maisuu2();
+					  },
+
+			
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+
+
+
+
+	}
+
+
+$(function illustbutton() {
+
+	$('#illustbutton').click(function() {
+			//console.log();
+		$.ajax({
+			type: 'GET',
+			url: 'illust.php',
+			data: {
+//				illust_id:illust_id,
+			},
+			success: function(data) {
+				console.log("イラストテーブルの行数は"+data);
+				var b= "イラスト一覧<br>";
+				var i =0;
+				illust_no_kazu = data ;
+				for(i =0 ; i< data ; i++){
+
+//show_all_illust();
+																																																								  }
+
+
+
+/*
+//				  b = b + '<input onclick="openLayerList(' + (i+1) + ');" type="button" class="clear" value=イラスト' + (i+1) + '><br>';
+
+				}
+*/
+				b = b + '<input onclick="setNewIllust(' + (i+1) + ');" type="button" class="clear" value=イラスト' + (i+1) + 'として新規登録><br>';
+
+//				$('div.scr').html(b);
+
+var c = 0;
+
+  				c = '<ul id="TreeView" class="filetree"></ul>'
+	 + '<ul id="browser" class="treeview"></ul>'
+	+ '<ul id="TreeView" class="filetree"></ul>';
+
+				$('div.scr').html(c);
+
+
+
+
+				//document.write("<div class=\"scr\" ></div>");
+				//document.write("<div>n</div>");
+
+
+
+illust_set();
+
+
+
+			},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+	});
+});
+
+/*レイヤー一覧を表示する関数*/
+function openLayerList(num){
+	document.Sample12_form.CallIllustId.value = num;
+
+		var data = 3;
+			 var b = "レイヤー一覧<br>";
+			setIllustNum = num;
+			console.log(num);
+		for(i =0 ; i< data ; i++){
+			b = b + '<input onclick="openFirstVersionList(' + (i+1) + ');" type=\"button"  class=\"clear\" value=レイヤー'+(i+1)+'><br>';
+		}
+
+		 $('div.scr').html(b);
+ 	}
+
+
+
+
+
+
+				   
+//_______________________________________________________________ここからSetNewVersion
+		var a3 = "naidesu";  
+		var  VersionId3 = 400;
+
+	
+
+
+
+
+//ここからset_New_Versionをループさせてwait処理
+/*
+	function set_new_version_wait(illust_id,layer_id,per_id){
+
+		time1 = setInterval(function(){
+
+			if(open_data1 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>'){
+								console.log("まだ展開できません。");
+			}else{
+								document.getElementById("layer_thum"+illust2+"-"+layer2).innerHTML =open_data1;
+								clearInterval(time1);
+								open_data1 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>';
+								
+								dldata_thum1 = 0;
+								console.log('dldataをreset！');
+
+			}
+							},1);
+
+
+				   }
+*/
+	var set_New_Version_check = 30000;
+
+	function set_New_Version(illust_id,layer_id,per_id){
+			time18 = setInterval(function(){
+					
+							if(set_New_Version_check == 30000){
+					loading_on();
+ 
+				$.ajax({
+					type: 'GET',
+					url: 'getVersionId.php',
+					data: {
+							},
+					success: function(data) {
+							console.log(data + "はバージョンテーブルに存在する行数");
+							set_New_Version_check = data;
+							VersionId3 = parseInt(data);
+				   			VersionId3 = VersionId3 + 2;
+							console.log(VersionId3 + "はセットしようとしているバージョンId");
+							document.Sample1_form.textbox.value = VersionId3;
+							VersionId3 = parseInt(document.Sample1_form.textbox.value);
+							}
+				   			});
+							
+							
+							}else{
+
+							clearInterval(time18);
+							
+							console.log("set_New_Version_checkは" + set_New_Version_check + "になったのでループから脱出し、新規バージョンの登録をします");
+						 set_New_Version5(illust_id,layer_id,per_id);
+							}
+			},1);
+	}
+
+
+	function set_New_Version5(illust_id,layer_id,per_id){
+				   
+				  //___________________各レイヤーごとにIFで場合分けする
+			if(laynum ==  1){
+						$.ajax({  //最初はイラストテーブル、レイヤテーブル、バージョンテーブルそれぞれに登録
+							type: 'POST',//最後にはPOSTに変えること
+							url: 'load2.php',
+							data: {
+							a:$("#drawingCanvas").html(),
+				   			id:document.Sample1_form.textbox.value,
+							num:document.Sample9_form.CallVersionId.value,            
+							laynum:layer_id,             
+							illust_id:illust_id  
+				
+							   },
+						success: function(data) {
+							console.log('OK');
+						
+							},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+
+			}else
+				   if(laynum == 2){
+						$.ajax({  //最初はイラストテーブル、レイヤテーブル、バージョンテーブルそれぞれに登録
+							type: 'POST',//最後にはPOSTに変えること
+							url: 'load2.php',
+							data: {
+							a:$("#drawingCanvas2").html(),
+							id:document.Sample1_form.textbox.value,
+							num:document.Sample9_form.CallVersionId.value,            
+							laynum:layer_id,             
+							illust_id:illust_id  
+				
+							   },
+						success: function(data) {
+							console.log('OK');
+						
+							},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+
+
+				   
+			}else
+				   if(laynum == 3){
+						$.ajax({  //最初はイラストテーブル、レイヤテーブル、バージョンテーブルそれぞれに登録
+							type: 'POST',//最後にはPOSTに変えること
+							url: 'load2.php',
+							data: {
+							a:$("#drawingCanvas3").html(),
+				   			id:document.Sample1_form.textbox.value,
+							num:document.Sample9_form.CallVersionId.value,            
+							laynum:layer_id,             
+							illust_id:illust_id  
+				
+							   },
+						success: function(data) {
+							console.log('OK');
+						
+							},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+   
+			}
+
+
+				   
+				   
+	
+		 
+		
+				   
+
+
+
+			
+			a3 = "#drawingCanvas" + laynum;
+			console.log(a3);
+
+				   
+			loading_off();
+				   
+	}
+
+
+			
+		function set_New_Version2(illust_id,layer_id,per_id){
+
+		$.ajax({  //最初はイラストテーブル、レイヤテーブル、バージョンテーブルそれぞれに登録
+			type: 'POST',//最後にはPOSTに変えること
+			url: 'load.php',
+			data: {
+				a:$("#drawingCanvas").html(),
+				id:VersionId3,
+				num:per_id,            
+				laynum:layer_id,             
+				illust_id:illust_id  
+				
+				   },
+			success: function(data) {
+				console.log('OK');
+				
+				},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+	 }
+				   
+				   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				   ////////////////////////////////////////////////ここからSetNewIllust
+
+
+function setNewIllust(num){
+	document.Sample6_form.textbox.value = num;//新しいイラストを投稿するのでその際のイラストIDをセットしている
+	var VersionId = 10000; 
+	var  newIllustId = num;
+			$(function getVersionLine() {//バージョンテーブルの行数をとってくるだけ
+				$.ajax({
+					type: 'GET',
+					url: 'getVersionId.php',
+					data: {
+							clayerid:setLayNum,
+							cillustid:setIllustNum,
+							},
+					success: function(data) {
+							console.log(data + "はバージョンテーブルに存在する行数");
+							
+							VersionId = parseInt(data) + 1;
+							console.log(VersionId + "はセットしようとしているバージョンId");
+							document.Sample1_form.textbox.value = VersionId;
+							VersionId = parseInt(document.Sample1_form.textbox.value);
+				   
+
+				   
+				   
+	/*   
+		layer_id = Sample4_form.textbox.value;   //ここで登録時の情報をセットしている
+		layer_name = Sample5_form.textbox.value;
+		illust_id = Sample6_form.textbox.value;
+		illust_name = Sample7_form.textbox.value;
+		author_id = Sample8_form.textbox.value;
+		vid =  parseInt(Sample1_form.textbox.value);
+	*/
+
+				   num = parseInt(num) + 0;
+				   
+				   ajax1(num,VersionId);//レイヤ１を登録するとともにイラスト、レイヤーテーブルにも登録している
+
+				   
+				   //					reload();//イラスト一覧を更新している
+				   },
+					error: function(data) {
+							console.log('NG');
+					}	
+				});
+		  });
+
+
+	function ajax1(illust_id2,version_id) {//ここで各レイヤーの情報を保存する
+	
+		//var p = $("#drawingCanvas"+laynum);////////////////////////////
+		//var p = $('"#drawingCanvas"+laynum).html'();
+			var p =$(svgElm).html();
+
+
+
+			//console.log();
+		$.ajax({  //最初はイラストテーブル、レイヤテーブル、バージョンテーブルそれぞれに登録
+			type: 'POST',//最後にはPOSTに変えること
+			url: 'load.php',
+			data: {
+				a:$("#drawingCanvas").html(),
+				id:VersionId + 1 ,
+				num:vnum ,            //これと
+				laynum:1,             //これと
+				illust_id:illust_id2  //これと
+
+				   },
+			success: function(data) {
+				console.log('OK');
+				//svgElm.html(now_layer_data + "aaaa~~");//ｐをnow_layer_dataに変更するね11月２６14時
+				},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+
+			VersionId = parseInt(document.Sample1_form.textbox.value);
+
+
+			ajax2(illust_id2,VersionId); //ここでレイヤ２，３の情報を送信する
+
+}
+
+
+	function ajax2(illust_id2,VersionId) {//ここでレイヤ２、３の情報を送信する関数をつくっている
+		VersionId = parseInt(document.Sample1_form.textbox.value);
+
+		$.ajax({
+				type: 'POST',
+				url: 'setVersion.php',
+				data: {
+					a:$("#drawingCanvas2").html(),
+					id:VersionId + 2,
+					num:0,
+					laynum:2,
+					layer_name:layer_name,
+					illust_id:illust_id2,
+					illust_name:illust_name,
+					author_id:author_id
+				},
+				success: function(data) {
+					console.log('OK');
+					//svgElm.html(now_layer_data + "aaaa~~");//ｐをnow_layer_dataに変更するね11月２６14時
+					},
+				error: function(data) {
+					console.log('NG');
+				}
+			});
+
+
+		$.ajax({
+				type: 'POST',
+				url: 'setVersion.php',
+				data: {
+					a:$("#drawingCanvas3").html(),
+					id:VersionId + 3,
+					num:0,
+					laynum:3,
+					layer_name:layer_name,
+					illust_id:illust_id2,
+					illust_name:illust_name,
+					author_id:author_id
+				},
+				success: function(data) {
+					console.log('OK');
+					//svgElm.html(now_layer_data + "aaaa~~");//ｐをnow_layer_dataに変更するね11月２６14時
+					},
+				error: function(data) {
+					console.log('NG');
+				}
+			});
+	loading_off();
+	}
+
+
+
+//新規イラストを投稿する際にイラストテーブルにイラストIdと作者名とイラスト名を登録させる
+function Illust_Auther(illust_id,auther){
+
+		$.ajax({
+				type: 'POST',
+				url: 'illust_auther.php',
+				data: {
+					illust_id:illust_id,
+					author_id:author
+				},
+				success: function(data) {
+					console.log('OK');
+					console.log("イラストIDを" + illust_id + "として登録");
+					console.log("作者名を"+  +"として登録")
+				   },
+				error: function(data) {
+					console.log('NG');
+				}
+			});
+
+
+	}
+
+
+
+
+
+
+
+/*
+ 	function reload() {//ここで各レイヤーの情報を保存する
+		$.ajax({    //この関数をつかってイラスト一覧を更新する
+			type: 'GET',
+			url: 'illust.php',
+			data: {
+				illust_id:illust_id,
+			},
+			success: function(data) {
+				console.log(data);
+				var b= "イラスト一覧<br>";
+				var i =0;
+				for(i =0 ; i< data ; i++){
+					b = b + '<input onclick="openLayerList(' + (i+1) + ');" type="button" class="clear" value=イラスト' + (i+1) + '><br>';
+
+				}
+				b = b + '<input onclick="setNewIllust(' + (i+1) + ');" type="button" class="clear" value=イラスト' + (i+1) + 'として新規登録><br>';
+				$('div.scr').html(b);
+				//document.write("<div class=\"scr\" ></div>");
+				//document.write("<div>n</div>");
+ 
+			},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+ };*/
+//alert("投稿しました");
+	var c = "バージョンを追加しました。"
+	 $('div.scr').html(c);
+
+				   } 
+/////////////////////////////////////////////ここまでsetNewIllust
+
+				  
+				  
+
+/*バージョン一覧を表示する関数*/
+  function openVersionList(num){
+
+
+	document.Sample11_form.textbox.value = num;
+
+
+			setLayNum = num;
+			console.log(num);
+			$.ajax({
+				type: 'GET',
+				url: 'layer.php',
+				data: {
+						clayerid:setLayNum,
+						cillustid:setIllustNum,
+						},
+				success: function(data) {
+						console.log(data);
+				  var b= "バージョン一覧<br>";
+				  	
+						var i =0;
+						for(i =0 ; i< data ; i++){
+								b = b + '<input onclick="openFirstVerList(' + (i+1) + ');" type=\"button\" class=\"clear\" value=バージョン'+(i+1)+'><br>';
+				  
+							}
+
+						$('div.scr').html(b);
+					},
+				error: function(data) {
+						console.log('NG');
+				}	
+			});
+	  }
+
+/*親のIDが０の一覧を表示する関数*/
+  function openFirstVersionList(num){
+console.log("OpenFirstVersionList");
+
+	document.Sample11_form.CallLayerNum.value = num;
+
+			setLayNum = num;//指定されたレイヤナンバーをセット
+			console.log(num);
+				  var b= "バージョンツリー<br>";
+					b = b + '<input onclick="openVersionByNum(' + 0 + ');" type=\"button\" class=\"clear\" value=バージョンを選択する><br>';
+
+					$('div.scr').html(b);
+ }
+
+
+
+var reloadVersion = 155;
+/*親のIDがボタンの番号のものを表示*/
+  function openVersionByNum(num){//Numは親のID
+	setVerNum = num; 
+	//setVerNum = parseInt(document.Sample9_form.CallVersionId.value);
+	 document.Sample9_form.CallVersionId.value = num;
+
+					 
+
+	$.ajax({  //親のIDがNumのバージョンが持っているバージョン数が知りたい。
+				type: 'GET',
+				url: 'version.php',
+				data: {
+						clayernum:setLayNum,//レイヤ番号
+						cillustid:setIllustNum,//イラストのID
+						cvernum:setVerNum,  //親のバージョンID(Num)
+					 },
+				success: function(data) {//ここでのDataはNumが親と覚えている、かつイラストIDレイヤ番号が一致しているバージョンの数
+					var comment = num;
+						if(comment == 0){
+							comment = "オリジナル";
+							console.log(comment);
+						}
+					console.log(data + "は親のIDが" + comment +"の子の数");
+						var b= "親のバージョンIDが" + (comment) + "の一覧<br>";
+						var i =0;
+//					reloadVersion = data;
+					console.log(reloadVersion);
+					 for(i =0 ; i< data ; i++){
+								b = b + '<input onclick="getId(' + (i+1) + ');" type=\"button\" class=\"clear\" value=バージョン'+(i+1)+'><br>';  //表示されたボタンがおされたときの挙動。ボタンの数字だけを送る。そのさきではNumが親IDでかつボタンの数字番目のバージョンが持っているIDを持ってくる。
+							}
+
+
+
+						if(setVerNum != 0){
+								b = b + '<input onclick="setNewVersion(' + (i+1) + ');" type="button" class="clear" value=バージョン' + (i+1) + 'として新規登録><br>';
+										}//もし親が０（つまりバージョンツリーの根）ならば根を増やさないようにする
+
+
+
+
+					$('div.scr').html(b);
+
+				},
+				error: function(data) {
+						console.log('NG');
+				}	
+
+	});
+
+}
+
+var callVersionId = 0000000000;//OpenDataをクリックしたときに開くバージョンのID（重複しないのでこれだけで一意になる）
+
+function getId(btn){//その関数　→　親のIDがNumのものでボタンの番号番目のID　→　openVersionByNum(そのID)が動く
+console.log(btn + "getId");
+			$.ajax({     //バージョンNumを親とするもののバージョンIDを呼び出す通信
+				type: 'GET',
+				url: 'getId.php',
+				data: {
+						clayernum:setLayNum,
+						cillustid:setIllustNum,
+						cvernum:setVerNum,//親のバージョンID
+						cbtn:btn,//押されたボタンの番号
+						},
+				success: function(data){ //ここでのデータは親のバージョンナンバーがNumでかつイラストIDとレイヤ番号が一致しているもののID
+						console.log("押したボタンのIDは"+ data);
+						openVersionByNum(data);
+
+						callVersionId = data;
+
+						
+						},
+				error: function(data) {
+						console.log('NG');
+				}	
+			});
+}
+
+
+
+
+
+
+
+///////////////////////////////////SetNewVersion は親が直前におしたボタンのバージョンのIDをバージョンナンバーとしたバージョンをついかする関数（絶対つたわらんなこれ）
+	function setNewVersion() {//ここで新しいバージョンを追加している
+
+	var  VersionId2 = 114514;
+
+		$(function getVersionLine() {//バージョンテーブルの行数をとってくるだけ
+				$.ajax({
+					type: 'GET',
+					url: 'getVersionId.php',
+					data: {
+							clayerid:setLayNum,
+						cillustid:setIllustNum,
+							},
+					success: function(data) {
+							console.log(data + "はバージョンテーブルに存在する行数");
+							VersionId2 = data;
+							console.log(VersionId2 + "はセットしようとしているバージョンId");
+							document.Sample1_form.textbox.value = VersionId2;
+							VersionId2 = parseInt(document.Sample1_form.textbox.value);
+				   
+		layer_id = Sample4_form.textbox.value;   //ここで登録時の情報をセットしている
+		layer_name = Sample5_form.textbox.value;
+		illust_id = Sample6_form.textbox.value;
+		illust_name = Sample7_form.textbox.value;
+		author_id = Sample8_form.textbox.value;
+		vid =  parseInt(Sample1_form.textbox.value);
+
+				   ajax3(VersionId2);//直前におしたボタンが持っているバージョンIDをバージョンナンバーとして持つように登録する
+				   },
+					error: function(data) {
+							console.log('NG');
+					}	
+				});
+																			  
+	});
+
+
+
+
+
+	function ajax3(num) {//ここで新しいバージョンを追加している
+
+console.log(newIllustId);
+	var LayerNum2 = parseInt(document.Sample11_form.CallLayerNum.value);
+	var setVerNum = parseInt(document.Sample9_form.CallVersionId.value);
+	var newIllustId = parseInt(document.Sample12_form.CallIllustId.value);
+
+	$.ajax({
+			type: 'POST',
+			url: 'setVersion.php',
+				data: {
+				a:now_layer_data,
+				id:num + 1,
+				num:setVerNum ,
+				laynum: LayerNum2 ,
+				layer_name:layer_name,
+				illust_id:newIllustId,
+				illust_name:illust_name,
+				author_id:author_id
+			},
+			success: function(data) {
+				console.log('OK');
+				//svgElm.html(now_layer_data + "aaaa~~");//ｐをnow_layer_dataに変更するね11月２６14時
+				},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+	};
+																		  
+//	openVersionByNum(reloadVersion);																		  
+	var c = "バージョンを追加しました。"
+	 $('div.scr').html(c);
+
+																		  
+																			  console.log(callVersionId);
+//alert("バージョンを追加しました");
+
+						
+						
+																			  }
+	  //////////////////////////////////
+
+
+
+
+
+		  function set_new_version_alert(num){
+
+
+			var value1 = "イラスト" + sample12_form.callillustid.value + "のレイヤー" + sample11_form.calllayernum.value + "バージョン" +  sample10_form.callversionnum.value +"の子として登録します";
+
+
+			var alert1 ='	<div>' + value1 + '</div><input type="button"id="illustbutton"  class="clear" value="バージョンを登録">';
+
+			alert(alert1);
+
+	 }
+
+
+
+
+
+
+
+
+
+
+
+ function openData(num){
+//  document.Sample9_form.CallVersionId.value = num;
+
+		 cverid = parseInt(document.Sample9_form.CallVersionId.value);
+
+//		 cvernum = Sample10_form.CallVersionNum.value;
+
+//		 clayid = Sample11_form.CallLayerNum.value;
+
+//		 cillustid = Sample12_form.CallIllustId.value;
+
+						
+$.ajax({
+			type: 'GET',
+			url: 'callingtest.php',
+			data: {
+				cverid:cverid,
+				},
+
+			success: function(data) {
+				console.log('OK');
+		dldata = data;
+			console.log(dldata+"aaa");
+			svgElm.html(dldata);
+//			set_layer(dldata);
+
+			
+			},
+			error: function(data) {
+
+				console.log('NG');
+			}
+		});
+
+}
+
+
+
+
+
+
+
+
+
+//こっからモジュールを作ります。illust_id,lay_id,ver_idを入力すると変数にｓｖｇ描画情報を代入する関数ね。a
+
+
+//レイヤ－１用
+
+
+function ThumopenData1_2(thum_illust_id,thum_layer_id,thum_ver_id){
+
+		$.ajax({
+						type: 'GET',
+						url: 'open_data.php',
+						data: {
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+									success: function(data) {
+							dldata_thum1_check = data;
+							console.log('OK');
+
+							dldata_thum12 = data;
+							console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "を取り出しました");
+							//svgElm.html(dldata);
+
+							dl_thum_data = dldata_thum12; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+
+		dldata_thum1 = '<svg viewBox="0 0 958 480" style=width:200>' + dldata_thum12 + '</svg>'
+		console.log(dldata_thum1);
+	
+
+
+
+			clearInterval(time25);
+console.log(dldata_thum1 + "がdldata_thum1だよ脱出している")
+			open_data1 = dldata_thum1;
+
+	
+
+	
+}
+
+
+
+
+
+
+
+
+
+var dldata_thum1_check = 12345;
+var dldata_thum12 = 0;
+
+function ThumopenData1(thum_illust_id,thum_layer_id,thum_ver_id){
+
+		$.ajax({
+						type: 'GET',
+						url: 'open_data.php',
+						data: {
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+									success: function(data) {
+							dldata_thum1_check = data;
+							console.log('OK');
+
+							dldata_thum12 = data;
+							console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "を取り出しました");
+							//svgElm.html(dldata);
+
+							dl_thum_data = dldata_thum12; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+
+		
+		
+		dldata_thum12 = '<svg viewBox="0 0 958 480" style=width:200>' + dldata_thum12 + '</svg>'
+//		console.log(dldata_thum12);
+	
+
+
+
+console.log(dldata_thum12 + "がdldata_thum12だよ脱出している")
+			open_data1 = dldata_thum12;
+	
+}
+
+
+var dldata_thum12 = 0;
+
+
+//レイヤ－2用
+	function ThumopenData2(thum_illust_id,thum_layer_id,thum_ver_id){
+			$.ajax({
+						type: 'GET',
+						url: 'open_data.php',
+						data: {
+
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+							dldata_thum2 = data;
+							console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "を取り出しました");
+							//svgElm.html(dldata);
+
+							dl_thum_data = dldata_thum2; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+				dldata_thum2 = '<svg viewBox="0 0 958 480" style=width:200>' + dldata_thum2 + '</svg>'
+				console.log(dldata_thum2);
+
+console.log(dldata_thum2 + "がdldata_thum2だよ脱出している")
+//		dldata_thum2 = "クリックでサムネイルを表示";
+			open_data2 = dldata_thum2;
+//		console.log('dldata?reset');
+		}
+			
+
+
+
+
+//レイヤ－3用
+	function ThumopenData3(thum_illust_id,thum_layer_id,thum_ver_id){
+			$.ajax({
+						type: 'GET',
+						url: 'open_data.php',
+						data: {
+
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+					dldata_thum3 = data;
+						console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "を取り出しました");
+						//svgElm.html(dldata);
+
+						dl_thum_data = dldata_thum3; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+			dldata_thum3 = '<svg viewBox="0 0 958 480" style=width:200>' + dldata_thum3 + '</svg>'
+			console.log(dldata_thum3);
+
+		console.log(dldata_thum3 + "がdldata_thum3だよ脱出している")
+//		dldata_thum3 = "クリックでサムネイルを表示";
+			open_data3 = dldata_thum3;
+//		console.log('dldata?reset');
+		}
+
+
+
+//_______________________________________________________________________________________________________
+
+
+//_____________________________________________________________________________________________________
+
+
+
+
+//指定したIDに合致するバージョン通し番号を返す関数
+var version_number_insert = 11111;
+var open_version_id = 0;
+var  ver_num_check = 50000;
+
+
+
+function call_version_id(thum_illust_id,thum_layer_id,thum_ver_id){
+
+						loading_on();
+	time10 = setInterval(function(){
+					if(ver_num_check == 50000){
+						
+						
+						$.ajax({
+						type: 'GET',
+						url: 'callVersionId.php',
+						data: {
+
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+						console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "のバージョンIDを取り出しました"+ data +"です");
+						
+						document.Sample10_form.CallVersionNum.value = parseInt(data);
+						document.Sample9_form.CallVersionId.value = parseInt(data);
+						
+						ver_num_check = data;
+						console.log("Vernumcheckは" + ver_num_check);
+						//svgElm.html(dldata);
+						open_version_id = data;//指定したバージョンのID
+						dl_thum_data = dldata_thum3; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+
+					}else{
+
+
+			call_version_id2(thum_illust_id,thum_layer_id,thum_ver_id);
+
+			clearInterval(time10);
+			console.log("ver_num_check ="+ ver_num_check + "でループを脱出");
+			ver_num_check = 50000;
+
+					//loading_off();
+					
+					}
+				},30);
+					}
+
+
+
+
+
+
+
+
+	function call_version_id2(thum_illust_id,thum_layer_id,thum_ver_id){//イラストID,レイヤID、親のID（この場合は０）
+/*
+		$.ajax({
+						type: 'GET',
+						url: 'callVersionId.php',
+						data: {
+
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+					//dldata_thum3 = data;
+						console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "のバージョンIDを取り出しました"+ data +"です");
+						
+						document.Sample10_form.CallVersionNum.value = parseInt(data);
+						document.Sample9_form.CallVersionId.value = parseInt(data);
+						
+						ver_num_check = data;
+						
+						//svgElm.html(dldata);
+						open_version_id = data;//指定したバージョンのID
+						dl_thum_data = dldata_thum3; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+//		console.log(open_version_id + 'を出力');
+
+						
+						
+*/
+	time4 = setInterval(function(){
+
+		if(open_version_id == 0){ 
+			open_version_id = call_version_id(thum_illust_id,thum_layer_id,thum_ver_id);//0608open_version_idをthum_ver_idに変えました
+			console.log("まだ展開できません");
+						}else{
+										/*									if(typeof open_version_id === "undefined"){
+																				console.log("このバージョンは登録されていません");
+																				console.log(open_version_id);
+																				clearInterval(time4);
+																				open_version_id = 0;
+										
+																				}else{
+										 */
+
+										
+										console.log(open_version_id +"でループを脱出");
+										clearInterval(time4);
+										
+												if(thum_ver_id == 0){
+										document.getElementById(thum_illust_id+"-"+thum_layer_id+"-"+thum_ver_id).innerHTML = open_version_id;//この行でレイヤーのタグにバージョン番号を格納している
+
+												call_version_id_count(thum_illust_id,thum_layer_id,open_version_id);
+												
+												}
+										
+										open_version_id = 0;
+						}
+				},30);
+
+						//return open_version_id;
+			
+				
+	}
+
+
+
+
+
+
+
+
+var aaaaa = 1145144545893;
+function version_number_set_to_layer(illust,layer,version){//レイヤーボタンを押したときにレイヤーのタグに自分のバージョン番号を書き込む
+
+	
+	//document.getElementById(illust+"-"+layer+"-"+version).innerHTML = 1;
+	aaaaa = call_version_id(17,1,0);
+	console.log(aaaaa);
+//	console.log(call_version_id(17,1,0)); //これがundefindedになるのでこれを解消→レイヤーのSPANタグに格納
+//						open_version_id = 0;
+
+}
+
+
+
+
+//_______________________________________________________
+//これで自分のIDから自分の子の数を引き出す関数
+
+/*
+function click_layer2{
+
+call_version_id_count_id()
+
+
+}
+*/
+
+
+
+
+//____________________________________________________________________________________________________
+
+//指定した親のID(子からしたらVersion_number)と自分が何番目の子供なのかを受け取り、自分のIDを知る関数
+
+	function perid_my_count(my_count,thum_ver_num,version_address){
+		var my_id = 600000;
+		
+		$.ajax({
+						type: 'GET',
+						url: 'perid_my_count.php',
+						data: {
+
+								cmy_count:my_count,
+								cvernum:thum_ver_num,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+						console.log(thum_ver_num + "を親とする"+ my_count + "番目の子の通し番号は"+ data +"です");
+						
+
+//											document.getElementById("TreeView").innerHTML = strHOGEHOGE;
+
+						$("#"+version_address+"").addClass(data)
+						
+						
+
+
+						document.Sample9_form.CallVersionId.value = data;
+						document.Sample10_form.CallVersionNum.value = thum_ver_num;
+
+						my_id = data;
+						call_version_id_count_id(thum_ver_num,version_address,my_id);  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+	}
+//		console.log(open_version_id + 'を出力');
+
+	
+//ここまでで自分が何男かプラス親の番号で自分の番号がわかる。
+//ここからはその番号が何個の子を持っているかを出す
+
+
+
+//_____________________________________________________________________________________
+
+
+
+var count2 = 500000; 
+	function call_version_id_count_id(thum_ver_id,version_address,my_id){
+
+						loading_on();
+		time12 = setInterval(function(){
+		if(count2 == 500000){
+		$.ajax({
+						type: 'GET',
+						url: 'callVersionId_id.php',
+						data: {
+
+								cvernum:my_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+							parseInt(thum_ver_id);
+							console.log(thum_ver_id + "を親とする" + my_id + "をIDとするバージョンの子の数は"+data+"こ！");
+							count2 = data;
+						parseInt(count2);
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+//					console.log(count2 + 'こある');
+		}else{
+			
+	console.log("バージョンの数は" + count2 + "個でループを脱出");
+	call_version_id_count_id2(thum_ver_id,version_address,my_id);
+	clearInterval(time12);
+				
+		}
+
+	},1);
+
+}
+
+
+
+
+
+	function call_version_id_count_id2(thum_ver_id,version_address,my_id){
+//検証用済んだら消せ
+			$.ajax({
+						type: 'GET',
+						url: 'callVersionId_id.php',
+						data: {
+
+								cvernum:my_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+							parseInt(thum_ver_id);
+							console.log(thum_ver_id + "を親とする" + my_id + "をIDとするバージョンの子の数は"+data+"こ！");
+							count2 = data;
+						parseInt(count2);
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+//					console.log(count2 + 'こある');
+
+	
+
+
+
+	time6 = setInterval(function(){
+
+		if(count2 == 500000){//////////////////////////ループして取り出せたので、このIDを元にして子のデータを引き出そう。　２０１７０４０５
+//			count2 = call_version_id_count(thum_illust_id,thum_layer_id,thum_ver_id);
+//			call_version_id_count_id(thum_ver_id,version_address,my_id);
+
+			
+			
+			console.log("count2="+ count2 +"なのでまだ展開できません");
+						}else{
+						
+								console.log(count2 +"個の子バージョンがあるということでループ脱出");
+
+
+						var  version_no_bangou = 1;
+	//ここからバージョンを追加するためのHTよ
+						//var version_tsuketashi = '<ul id=version' + thum_illust_id +'_'+ thum_layer_id +'>';
+						var version_tsuketashi = '<ul id=version' + version_address +'>';
+
+	console.log("version_addressは"+version_address)
+						
+						for(var i=0; i < count2;i++){
+
+
+
+
+
+//			 version_tsuketashi  = version_tsuketashi + "<li  class  = 'closed'  id= '"+ version_address +"_"+ version_no_bangou + "'  onclick = "+'"'+" click_version("+ my_id +","+ version_no_bangou +",\'"+ version_address +"_"+ version_no_bangou +"\')"+ '"' +"  ><span id ='"+ version_address +"_"+ version_no_bangou + " ' class='folder'>追加分再帰的"+ version_address +'_'+ version_no_bangou +"</span><ul id = '仮置き'></ul></li>";
+
+
+
+
+			 version_tsuketashi  = version_tsuketashi + "<li  class  = 'closed'  id= '"+ version_address +"_"+ version_no_bangou + "'  onclick = "+'"'+" click_version("+ my_id +","+ version_no_bangou +",\'"+ version_address +"_"+ version_no_bangou +"\');"+ "insert_thum_version()" + '"' +"  ><span id ='"+ version_address +"_"+ version_no_bangou + " ' class='folder'>バージョン"+ version_address +'_'+ version_no_bangou +"</span><ul id = '仮置き'></ul></li>";
+
+
+
+						version_no_bangou = version_no_bangou + 1;
+									}
+									
+						version_tsuketashi = version_tsuketashi +'</ul>"';
+
+//						version_tsuketashi = $( version_tsuketashi ).appendTo("#" + thum_illust_id +'-'+thum_layer_id );
+//						version_tsuketashi = $( version_tsuketashi ).appendTo("#1_1_1");
+
+						
+						version_tsuketashi = $( version_tsuketashi ).appendTo("#" + version_address);
+					
+						console.log("追加部分は"+ version_tsuketashi) 
+								  
+			
+//perid_my_countは正常に動く。しかしなぜかボタンにすると動かぬ。
+
+								count2 = 500000;
+								//レイヤーの通し番号を持つSPANタグがあるレイヤーの下に導いた個数だけつける
+
+
+									   $("#TreeView").treeview({
+										add: version_tsuketashi
+										});
+
+								clearInterval(time6);
+								//loading_off();
+
+					insert_thum_version();
+						}
+				},30);
+						}
+
+
+
+
+
+//_________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//___________________________________________________________________
+
+//指定したバージョンの通し番号を親とするバージョンの数を返す
+
+var count = 500000;
+var version_tsuketashi = "付け足すものがない"
+var version_number_insert = 0;
+
+						
+						
+		function call_version_id_count(thum_illust_id,thum_layer_id,thum_ver_id){
+					time11 = setInterval(function(){
+						if(count == 500000){
+			
+			$.ajax({
+						type: 'GET',
+						url: 'callVersionId_number.php',
+						data: {
+
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+							parseInt(thum_ver_id);
+							console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "(call_version_idで引き出した)の子の数を調べたよ");//レイヤー1-1の子の数を出した
+						count = data;
+						parseInt(count);
+						//svgElm.html(dldata);
+//						open_version_id = data;
+						dl_thum_data = count; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+//					console.log(count + 'こある');
+
+
+						}else{
+						
+						call_version_id_count2(thum_illust_id,thum_layer_id,thum_ver_id)//thum_ver_idは生成された子のID（レイヤー1-１の前に書いてある番号）
+						clearInterval(time11);
+						//count = 500000;
+						}
+		},30);
+						}
+						
+
+						function call_version_id_count2(thum_illust_id,thum_layer_id,thum_ver_id){//thum_ver_idは生成された子のID（レイヤー1-１の前に書いてある番号）
+
+						
+						
+						/*
+						$.ajax({
+						type: 'GET',
+						url: 'callVersionId_number.php',
+						data: {
+
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+							parseInt(thum_ver_id);
+							console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "(call_version_idで引き出した)の子の数を調べたよ");//レイヤー1-1の子の数を出した
+						count = data;
+						parseInt(count);
+						//svgElm.html(dldata);
+//						open_version_id = data;
+						dl_thum_data = count; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+//					console.log(count + 'こある');
+
+*/
+	time5 = setInterval(function(){
+
+		if(count == 500000){//////////////////////////ループして取り出せたので、このIDを元にして子のデータを引き出そう。　２０１７０４０５
+//			count = call_version_id_count(thum_illust_id,thum_layer_id,thum_ver_id);
+			console.log("count="+ count +"なのでまだ展開できません");
+						}else{
+						
+								console.log(count +"個の子バージョンがあるということでループ脱出")
+
+
+						var  version_no_bangou = 1;
+	//ここからバージョンを追加するためのHTML文を作るよ
+						var version_tsuketashi = '<ul id=layer' + thum_illust_id +'_'+ thum_layer_id +'>';
+						for(var i=0; i < count;i++){
+						
+														 
+
+						
+	  
+						//						version_tsuketashi  = version_tsuketashi + "<li id = '"+ thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "' ><span id ='"+ thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou +"' class='folder'>バージョン"+ thum_illust_id +'_'+ thum_layer_id +'_'+ version_no_bangou +"</span><ul><li><span class='folder'>バージョン</span></li></ul></li>";
+
+						
+						
+
+						//version_tsuketashi  = version_tsuketashi + "<li class  = 'closed'  id = '"+ thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "' onclick = \"click_version(" + thum_ver_id +","+ version_no_bangou +",\'" + thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "\')"+"\"><span id ='"+ thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "' class='folder'>バージョン"+ thum_illust_id +'_'+ thum_layer_id +'_'+ version_no_bangou +"</span><ul id='karioki'></ul></li>";
+
+
+
+						//version_tsuketashi  = version_tsuketashi + "<li class  = 'closed'  id = '"+ thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "' onclick = \"click_version(" + thum_ver_id +","+ version_no_bangou +",\'" + thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "\');"+ "insert_thum_version(" + document.Sample12_form.CallIllustId.value +","+ document.Sample11_form.CallLayerNum.value  +"," + document.Sample9_form.CallVersionId.value  + ")"+"\"><span id ='"+ thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "' class='folder'>バージョン"+ thum_illust_id +'_'+ thum_layer_id +'_'+ version_no_bangou +"</span><ul id='karioki'></ul></li>";
+
+
+
+						version_tsuketashi  = version_tsuketashi + "<li class  = 'closed'  id = '"+ thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "' onclick = \"click_version(" + thum_ver_id +","+ version_no_bangou +",\'" + thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "\');"+ "insert_thum_version()"+"\"><span id ='"+ thum_illust_id +"_" + thum_layer_id +"_"+ version_no_bangou + "' class='folder'>バージョン"+ thum_illust_id +'_'+ thum_layer_id +'_'+ version_no_bangou +"</span><ul id='karioki'></ul></li>";
+
+
+
+
+
+
+
+						version_no_bangou = version_no_bangou + 1;
+									}
+									
+						//version_tsuketashi = '$("' + version_tsuketashi;
+						version_tsuketashi = version_tsuketashi +'</ul>"';
+						version_tsuketashi = $( version_tsuketashi ).appendTo("#" + thum_illust_id +'-'+thum_layer_id );
+								 console.log("追加部分は"+ version_tsuketashi) 
+								  
+			
+
+								count = 500000;
+								//レイヤーの通し番号を持つSPANタグがあるレイヤーの下に導いた個数だけつける
+								console.log(count + "はcountで50000に戻されました")
+
+
+
+
+
+									   $("#TreeView").treeview({
+										add: version_tsuketashi
+										});
+								clearInterval(time5);
+								
+								//		return dldata_thum3;
+						//	dldata_thum3 = 0;
+						//		console.log('dldata?reset');
+						}
+				},30);
+						
+
+						
+						
+						
+		insert_thum_version();
+						
+}
+
+
+								function click_layer(thum_illust_id,thum_layer_id,thum_ver_id){
+
+
+								var id_name = "#" + thum_illust_id +"-"+thum_layer_id;
+									String(id_name);
+									console.log(id_name)
+									if($(id_name).attr("class").indexOf("kaihou!!!")  != -1 )
+										{//もし押されたことがある階層なら何もしないようにする。（version_tsuketashiを無に）
+											console.log("一度クリックしたことがあります")
+											//version_tsuketashi = "";
+									}else{
+										call_version_id(thum_illust_id,thum_layer_id,thum_ver_id);
+										remove_closed();
+									}
+								
+									//_______________こっからイラストIDをセット
+									illustId_layerId_set(thum_illust_id,thum_layer_id,thum_ver_id);
+
+						
+									//バブリングってやつを止めている
+									event.stopPropagation();
+								  }
+
+
+/*
+								function click_version(per_id,thum_ver_id,version_address){
+									var id_name = "#" + version_address; 
+									
+									String(id_name);
+									console.log(id_name)
+									if($(id_name).attr("class").indexOf("kaihou")  != -1 ){
+
+											console.log("一度クリックしたことがあります!!!")
+											//version_tsuketashi = "";
+									}else{
+										console.log(per_id + "がPerId!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+										perid_my_count(thum_ver_id,per_id,version_address);
+										remove_closed();
+									}
+											
+									//________________こっからバージョンIDのセット20170610ここで4とかがはいるところでエラーが出る。
+									versionId_perId_set(thum_ver_id,per_id);
+								}
+*/
+
+
+						
+						function click_version(per_id,thum_ver_id,version_address){
+												var id_name = "#" + version_address; 
+									
+												String(id_name);
+												console.log(id_name)
+												if($(id_name).attr("class").indexOf("kaihou")  != -1 ){
+
+														console.log("一度クリックしたことがあります!!!")
+														//version_tsuketashi = "";
+												}else{
+						console.log(per_id + "がPerId!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+						perid_my_count(thum_ver_id,per_id,version_address);
+													remove_closed();
+												}
+											
+					versionId_perId_set(thum_ver_id,per_id,version_address);
+
+
+						//バブリングってやつを止めている要は子をクリックしたときに親まで動くのを防ぐ
+						event.stopPropagation();
+						
+						
+						}
+
+
+/*
+
+								function click_version(per_id,thum_ver_id,version_address){
+								  
+									if($("#"+ per_id).attr("class").indexOf("kaihou")  != -1 )
+										{
+												console.log("このバージョンは一度クリックしたことがあります")
+									}else{
+												perid_my_count(pre_id,thum_ver_id,version_address);
+												remove_closed();
+									}
+//ここをなんとかしろ！！！！！！！なんかよみこめねぇぞ！！
+								}
+
+*/
+//_________________________________________________________________________________________________________________
+
+
+/*
+//バージョンをクリックした時に動くプログラム
+		function(per_id,per_id_address){
+						
+
+						perid_my_count(per_id,per_id_address);//自分のIDを取り出す
+						
+						//        ↓
+						
+						call_version_id_count_id(per_id,per_id_address);//自分のIDを組み込んで子を生成
+						//ここ自分のIDを読み込まないと子に組み込めないかもってかper~にcall_~を入れた方がいいかも
+						
+						
+						
+						
+						}
+
+
+*/
+
+//___________________________________________________________
+
+
+
+
+//_____________________________________________________イラスト番号、レイヤー番号、セットする番号の親のIDをそれぞれ指定する
+
+
+
+						function illustId_layerId_set(illust_id,layer_id,version_number){
+
+						document.Sample12_form.CallIllustId.value = illust_id;
+window_illust_id = illust_id;
+window_layer_id = layer_id;
+indow_version_id = version_id;
+console.log("window_illust_id="+window_illust_id);
+						
+						document.Sample11_form.CallLayerNum.value = layer_id;
+						//document.Sample10_form.CallVersionNum.value = version_id;//これをつけたい
+						layer_my_id(illust_id,layer_id,version_number);
+
+						
+						
+						}
+
+
+						function layer_my_id(thum_illust_id,thum_layer_id,thum_ver_id){//_____________________クリックしたレイヤーの通し番号を引き出すAjax
+
+						
+							
+		$.ajax({
+						type: 'GET',
+						url: 'callVersionId.php',
+						data: {
+
+								clayid:thum_layer_id,
+								cillustid:thum_illust_id,
+								cverid:thum_ver_id,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+					//dldata_thum3 = data;
+						console.log(thum_illust_id + "-" + thum_layer_id + "-" + thum_ver_id + "のバージョンIDを取り出しました"+ data +"です");
+						
+						document.Sample10_form.CallVersionNum.value = 0;
+						document.Sample9_form.CallVersionId.value = parseInt(data);
+
+						
+						//svgElm.html(dldata);
+						open_version_id = data;//指定したバージョンのID
+						dl_thum_data = dldata_thum3; 
+						
+						  
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+
+						
+						
+						
+/*						
+						
+						$.ajax({
+								type: 'GET',
+								url: 'callVersionId.php',
+								data: {
+
+										clayid:layer_id,
+										cillustid:illust_id,
+										cverid:version_id,
+									},
+			
+						success: function(data) {
+							console.log('OK');
+					//dldata_thum3 = data;
+						console.log(illust_id + "-" + layer_id + "-" + version_id + "のバージョンIDを取り出しました"+ data +"です");
+						
+						document.Sample10_form.CallVersionNum.value = 0;
+						document.Sample9_form.CallVersionId.value = parseInt(data);
+
+						},
+						error: function(data) {
+							console.log('NG');
+						}
+					});
+*/
+						}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						function versionId_perId_set(version_id,per_id,version_address){
+
+
+						set_form_version_id(version_id,per_id,version_address);
+
+
+
+
+						document.Sample9_form.CallVersionId.value = version_id;
+						document.Sample10_form.CallVersionNum.value = per_id;
+						console.log("私のIDは！！！！！！！！！！！！！！！！！！！！！！"+ version_id);
+
+
+						}
+
+
+
+				function set_form_version_id(my_count,thum_ver_num,version_address){
+					var my_id = 600000;
+		
+						$.ajax({
+						type: 'GET',
+						url: 'perid_my_count.php',
+						data: {
+
+								cmy_count:my_count,
+								cvernum:thum_ver_num,
+							},
+			
+						success: function(data) {
+							console.log('OK');
+						console.log(thum_ver_num + "を親とする"+ my_count + "番目の子の通し番号は"+ data +"です");
+						
+
+//											document.getElementById("TreeView").innerHTML = strHOGEHOGE;
+													
+
+
+															var version_id_hikidasi = data;
+
+															$.ajax({
+															type: 'GET',
+															url: 'illust_id_hikidashi.php',//ここでバージョンIDからイラストのIDを引き出す
+															data: {
+																cver_id:version_id_hikidasi,
+																	},
+			
+															success: function(data) {
+												
+															document.Sample12_form.CallIllustId.value = data;
+															
+															
+															}
+												});
+
+
+
+															var layer_id_hikidasi = data;
+
+															$.ajax({
+															type: 'GET',
+															url: 'layer_id_hikidashi.php',//ここでバージョンIDからイラストのIDを引き出す
+															data: {
+																clay_id:layer_id_hikidasi,
+																	},
+			
+															success: function(data) {
+												
+															document.Sample11_form.CallLayerNum.value = data;
+															
+															
+															}
+												});
+
+
+
+
+
+
+
+						$("#"+version_address+"").addClass(data)
+						
+						
+						//ここにDataをつかってイラスト番号とレイヤー番号を引き出すphpをつくってajax
+
+
+						document.Sample9_form.CallVersionId.value = data;
+
+						}
+						});
+				}
+
+
+
+
+/*
+						function illustId_layerId_perId(illust_id,layer_id,per_id,version_id){
+
+
+						Sample9_form.CallVersionId.value = per_id;
+						Sample10_form.CallVersionId.value = verison_id;
+						Sample11_form.CallVersionId.value = layer_id;
+						Sample12_form.CallVersionId.value = illust_id;
+
+
+
+						
+*/
+//___________________________________________________新しくイラストをセットする
+
+
+function set_new_illust(){
+
+//illust_set();
+
+	
+	console.log("ボタンを押す前のillust_no_kazu は"+ illust_no_kazu);
+setTimeout('set_new_illust_wait()',1000);
+illust_no_kazu = 10000;
+}
+
+function set_new_illust_wait(){
+
+	time14 = setInterval(function(){
+
+	if(illust_no_kazu == 10000){
+
+		$.ajax({
+			type: 'GET',
+			url: 'illust.php',
+			data: {
+				illust_id:illust_id,
+			},
+			success: function(data) {
+				illust_no_kazu = data;
+ 
+			},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+
+			console.log("まだillust_no_kazuを取得してません");
+			}else{
+
+								set_new_illust2();
+								clearInterval(time14);
+								console.log('illust_no_kazuを取得してset_new_illust2を実行します');
+			}
+							},10);
+
+}
+
+
+function set_new_illust2(){
+
+
+		$.ajax({
+			type: 'GET',
+			url: 'illust.php',
+			data: {
+				illust_id:illust_id,
+			},
+			success: function(data) {
+				illust_no_kazu = data;
+ 
+			},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+
+
+illust_no_kazu = parseInt(illust_no_kazu) +1;
+
+						setNewIllust(illust_no_kazu);
+			illust_no_kazu = 10000;
+	}
+
+
+
+
+
+
+
+
+/////こっからちょっとキーボードでペンの太さをかえてみるよ
+document.onkeydown = penSize;
+
+function penSize(evt){
+var kcode;
+if(document.all)
+{
+ kcode = event.keyCode;
+}
+else
+{
+ kcode = evt.which;
+}
+if(kcode == 88){penNarrow();}
+if(kcode == 67){penWidth();}
+if(kcode == 90){undo2();}
+}
+function penNarrow(){
+
+
+						if(pensizekun == "10"){
+								pensizekun = "9"; //線を細く
+						}else{
+							if(pensizekun == "9"){
+										pensizekun = "8";
+						}else{
+							if(pensizekun == "8"){
+										pensizekun = "7";
+						}else{
+							if(pensizekun == "7"){
+										pensizekun = "6";
+						}else{
+							if(pensizekun == "6"){
+										pensizekun = "5";
+						}else{
+							if(pensizekun == "5"){
+										pensizekun = "4";
+						}else{
+							if(pensizekun == "4"){
+										pensizekun = "3";
+						}else{
+							if(pensizekun == "3"){
+										pensizekun = "2";
+						}else{
+							if(pensizekun == "2"){
+										pensizekun = "1";
+							
+							}}}}}}}}};
+						
+
+
+
+
+}
+
+
+function penWidth(){
+						if(pensizekun == "1"){
+								pensizekun = "2"; //線を細く
+						}else{
+						if(pensizekun == "2"){
+								pensizekun = "3";
+						}else{
+						if(pensizekun == "3"){
+								pensizekun = "4";
+						}else{
+						if(pensizekun == "4"){
+								pensizekun = "5";
+						}else{
+						if(pensizekun == "5"){
+								pensizekun = "6";
+						}else{
+						if(pensizekun == "6"){
+								pensizekun = "7";
+						}else{
+						if(pensizekun == "7"){
+								pensizekun = "8";
+						}else{
+						if(pensizekun == "8"){
+								pensizekun = "9";
+						}else{
+						if(pensizekun == "9"){
+								pensizekun = "10"
+						}}}}}}}}};
+
+}
+
+
+
+
+
+
+//___________________localstrageを使って各DrawingCanvasの情報を保存
+
+window.addEventListener('beforeunload', function(e) {
+
+st.setItem('layer1',$("#drawingCanvas").html());
+st.setItem('layer2',$("#drawingCanvas2").html());
+st.setItem('layer3',$("#drawingCanvas3").html());
+
+
+}, false);
+
+
+
+var st = localStorage;
+var result1 = st.getItem('layer1');
+var result2 = st.getItem('layer2');
+var result3 = st.getItem('layer3');
+
+
+
+st.setItem('layer1',1);
+st.setItem('layer2',3);
+st.setItem('layer3',5);
+
+console.log("layer1は" + result1);
+console.log("layer2は" + result2);
+console.log("layer3は" + result3);
+
+
+
+setTimeout("reload_set_layer()",100);
+
+
+
+function reload_set_layer(){
+
+svgElm.html(result1); 
+svgElm = $("#drawingCanvas2");
+svgElm.html(result2); 
+svgElm = $("#drawingCanvas3");
+svgElm.html(result3);
+svgElm = $("#drawingCanvas");
+}
+//_______________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+//消しゴムをつくるよ_______________________________________
+/*
+
+window.addEventListener("click", function(e) {
+
+	    //クリック時のデフォルトの動作禁止
+	    e.preventDefault();
+
+		    //マウスカーソルの座標を取得
+		    var x = e.clientX;
+			    var y = e.clientY;
+
+				    //座標上の要素を取得
+				    var str = document.elementFromPoint(x, y);
+//						alert(str);
+
+					    //コンソールログを残す
+					    console.log(str.toString());
+
+						if(~str.toString().indexOf('Path')){
+
+						    str.parentNode.removeChild(str);
+
+							console.log("SVGだぜこれは！");
+
+						
+						
+						}
+
+						
+
+
+						    //要素の削除
+
+}, false);
+
+
+*/
+
+
+
+
+
+var eraser = 0;
+
+function eraser2(){
+
+			if(eraser == 0){
+								eraser = 1;
+					document.eraser.src = "eraser_dark.jpg";
+					console.log("eraser = "+ eraser);
+			}else{
+								eraser = 0;
+
+					document.eraser.src = "eraser.jpg";
+					console.log("eraser = "+ eraser);
+			}
+}
+
+
+
+
+
+
+
+
+	window.addEventListener("click", function(e) {
+			  //クリック時のデフォルトの動作禁止
+//_____レイヤー１の場合
+		if(eraser == 1){
+				if(laynum == 1){
+					e.preventDefault();//マウスカーソルの座標を取得
+				    var x = e.clientX;
+					var y = e.clientY;  //座標上の要素を取得
+					for(i = x-4; i < x+4; i++){
+								for(j = y-4; j < y+4; j++){
+									var str = document.elementFromPoint(i, j);
+								    //コンソールログを残す
+								  //  console.log(str.toString());
+									if(~str.toString().indexOf('Path')){
+									    str.parentNode.removeChild(str);
+										console.log("SVGだぜこれは！");
+							
+									}
+								}
+							}
+					}
+				
+
+//__________レイヤー２の場合
+						if(laynum == 2){
+							e.preventDefault();
+				    		//マウスカーソルの座標を取得
+						    var x = e.clientX;
+							var y = e.clientY;
+								    //座標上の要素を取得
+
+									document.getElementById("drawingCanvas").style.display ="none";
+								for(i = x-4; i < x+4; i++){
+									for(j = y-4; j < y+4; j++){
+									var str = document.elementFromPoint(i, j);
+
+								//コンソールログを残す
+									  //  console.log(str.toString());
+										if(~str.toString().indexOf('Path')){
+										    str.parentNode.removeChild(str);
+											console.log("SVGだぜこれは！");
+										}
+									}
+
+									document.getElementById("drawingCanvas").style.display ="";
+								}
+						}
+
+
+
+						if(laynum == 3){
+								
+								for(i = x-4; i < x+4; i++){
+									for(j = y-4; j < y+4; j++){
+									var str = document.elementFromPoint(i, j);
+
+								//コンソールログを残す
+									  //  console.log(str.toString());
+										if(~str.toString().indexOf('Path')){
+										    str.parentNode.removeChild(str);
+											console.log("SVGだぜこれは！");
+										}
+									}
+
+									document.getElementById("drawingCanvas").style.display ="";
+									document.getElementById("drawingCanvas2").style.display ="";
+
+								}
+						}
+
+
+
+
+
+				}
+								
+								
+			}, false);
+
+
+
+
+
+
+						//_____________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+//_____________________________________________________
+
+
+var undo_click = 0;
+var redo_click = 1;
+
+function undo2(){
+
+
+
+
+/*
+	if(undo_click == 0){
+
+		if(laynum == undo_layer_number){
+						
+						
+						
+	svgElm.html(undo_layer_data);
+	redo_layer_data = now_layer_data;
+	now_layer_data = undo_layer_data;
+	console.log("redo_layer_data = " + redo_layer_data);
+	
+
+	document.undo.src = "migi_dark.jpg";
+	document.redo.src = "migi.jpg";
+	redo_click = 0;
+	undo_click = 1;
+						}else{
+	
+	
+		}
+	
+	}
+*/
+
+	if(undo_click == 0){
+	svgElm.html(undo_layer_data);
+	redo_layer_data = now_layer_data;
+	now_layer_data = undo_layer_data;
+	console.log("redo_layer_data = " + redo_layer_data);
+	document.undo.src = "migi_dark.jpg";
+	document.redo.src = "migi.jpg";
+	redo_click = 0;
+	undo_click = 1;
+
+
+	}
+
+						
+						
+}
+
+
+
+
+
+function redo2(){
+
+	if(redo_click == 0){
+	svgElm.html(redo_layer_data);
+	document.undo.src = "migi.jpg";
+	document.redo.src = "migi_dark.jpg";
+	undo_click = 0;
+	redo_click = 1;
+	console.log(redo_layer_data);
+
+	}
+}
+
+/*
+
+   
+   
+   
+   var strHOGEHOGE = new String();
+strHOGE +='<li><span class="folder">マイコンピュータ</span>';
+strHOGE +='<ul>';
+strHOGE +='<li class="closed"><span class="folder">C&yen;</span>';
+strHOGE +='</li>';
+strHOGE +='<li><span class="folder">D&yen;</span>';
+strHOGE +='</li>';
+strHOGE +='</ul>';
+strHOGE +='</li>';
+strHOGE +='</ul>';
+
+
+				 function illust_set_test(){
+//							  for(ver i=1;i<illust_no_kazu;i++){
+											document.getElementById("TreeView").innerHTML = strHOGEHOGE;
+//								;}
+					  }
+*/
+
+var illust_count = 1;//変更を加えた。もとは１
+											  
+											  
+											  
+				 
+	function illust_set(){
+		illust_no_kazu = parseInt(illust_no_kazu) + 1;//変更を加えた
+		console.log(illust_no_kazu + "がイラストテーブルの行数＋１");
+	
+					 
+					 
+					 for(var i=1;i<illust_no_kazu;i++){
+								var strHOGE =　new String();
+								/*for文で描く内容*/
+								
+					 strHOGE +='	<li class="closed"  onclick = "insert_thum_all_layer('+ illust_count  +'); console.log(this.id)"><span class="folder">イラスト'+illust_count+'<div id="illust_thum'+illust_count+'"></div></span>';//ここでdivタグを挟むことでフォルダの画像をクリックしないと展開しなくなった一度押すとclassにkaihouが追加される。二度目以降はkaihouを含むかを確認して中身の追加をやめる
+								strHOGE +='				<ul id=illust'+ illust_count +'>';
+
+						
+//レイヤ１__________________________________________________________________________
+					  strHOGE +='						<li  id = '+ illust_count +'-1  onclick = "click_layer('+ illust_count +',1,0); ckBtn(this); insert_thum_version()"><span class ="folder"><span id = '+ illust_count +'-1-0></span>オリジナルレイヤ-'+ illust_count +'-1<div id = layer_thum'+ illust_count +'-1></div></span>';//liのidにそのバージョンのIDを格納click_layerはクリックしたことがあるかを確認→したことがなければ下のバージョンを追加、なければ何もしない
+					  			strHOGE +='								<ul id=karioki>';//これがないと＋ボタンが消えちまう
+//								strHOGE +='									<li id="closed"><span class="folder kore">バージョン'+ illust_count +'-1-1</span>';
+//								strHOGE +='												<ul id=version1_1_1>';
+//								strHOGE +='													<li ><span class="folder">バージョン'+illust_count+'-1-2</li>';
+//								strHOGE +='												</ul>';
+								strHOGE +='		';
+								strHOGE +='										';
+//								strHOGE +='									</li>';   
+								strHOGE +='								</ul>'; //追加したときに閉じてしまわなくはなったけど、このパーツを取ったときに崩れてしまう。20170524
+								strHOGE +='						';
+								strHOGE +='				</li>';
+								strHOGE +='';
+								strHOGE +='';
+//レイヤ２___________________________________________________________________________
+										   
+
+
+						strHOGE +='						<li  id = '+ illust_count +'-2  onclick = "click_layer('+ illust_count +',2,0); ckBtn(this); insert_thum_version()"><span class ="folder"><span id = '+ illust_count +'-2-0></span>オリジナルレイヤ-'+ illust_count +'-2<div id = layer_thum'+ illust_count +'-2></div></span>';//liのidにそのバージョンのIDを格納click_layerはクリックしたことがあるかを確認→したことがなければ下のバージョンを追加、なければ何もしない
+					  			strHOGE +='								<ul id=karioki>';//これがないと＋ボタンが消えちまう
+//								strHOGE +='									<li id="closed"><span class="folder kore">バージョン'+ illust_count +'-1-1</span>';
+//								strHOGE +='												<ul id=version1_2_1>';
+//								strHOGE +='													<li ><span class="folder">バージョン'+illust_count+'-1-2</li>';
+//								strHOGE +='												</ul>';
+								strHOGE +='		';
+								strHOGE +='										';
+//								strHOGE +='									</li>';   
+								strHOGE +='								</ul>'; //追加したときに閉じてしまわなくはなったけど、このパーツを取ったときに崩れてしまう。20170524
+								strHOGE +='						';
+								strHOGE +='				</li>';
+								strHOGE +='';
+								strHOGE +='';
+//レイヤ３___________________________________________________________________________
+	
+
+
+						strHOGE +='						<li  id = '+ illust_count +'-3  onclick = "click_layer('+ illust_count +',3,0); ckBtn(this); insert_thum_version()"><span class ="folder"><span id = '+ illust_count +'-3-0></span>オリジナルレイヤ-'+ illust_count +'-3<div id = layer_thum'+ illust_count +'-3></div></span>';//liのidにそのバージョンのIDを格納click_layerはクリックしたことがあるかを確認→したことがなければ下のバージョンを追加、なければ何もしない
+					  			strHOGE +='								<ul id=karioki>';//これがないと＋ボタンが消えちまう
+//								strHOGE +='									<li id="closed"><span class="folder kore">バージョン'+ illust_count +'-1-1</span>';
+//								strHOGE +='												<ul id=version1_3_1>';
+//								strHOGE +='													<li ><span class="folder">バージョン'+illust_count+'-1-2</li>';
+//								strHOGE +='												</ul>';
+								strHOGE +='		';
+								strHOGE +='										';
+//								strHOGE +='									</li>';   
+								strHOGE +='								</ul>'; //追加したときに閉じてしまわなくはなったけど、このパーツを取ったときに崩れてしまう。20170524
+								strHOGE +='						';
+								strHOGE +='				</li>';
+								strHOGE +='';
+								strHOGE +='';
+//___________________________________________________________________________
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										   
+
+
+/*
+
+
+								strHOGE +='					<li id = '+ illust_count +'-2  onclick = "call_version_id_count('+ illust_count +',2,0); call_version_id('+ illust_count +',2,0)"><span class ="folder"><span id = '+ illust_count +'-2-0></span>レイヤ-'+illust_count+'-2<div id = layer_thum'+ illust_count +'-2></div></span>';
+								strHOGE +='								<ul id=layer1_1>';
+							strHOGE +='										<li "><span class="folder">バージョン'+illust_count+'-2-1</span>';
+								strHOGE +='												<ul id=version1_1_1>';
+								strHOGE +='													<li id="closed"><span class="folder">バージョン'+illust_count+'-3-2</li>';
+								strHOGE +='												</ul>';
+								strHOGE +='										</li>';
+								strHOGE +='								</ul>';
+								strHOGE +='						';
+								strHOGE +='						</li>';
+								strHOGE +='';
+	
+
+*/
+
+
+
+
+
+
+															  
+															  
+															  
+															  
+/*															  
+								strHOGE +='		<li id = '+ illust_count +'-3  onclick = "call_version_id_count('+ illust_count +',3,0); call_version_id('+ illust_count +',3,0)"><span class ="folder"><span id = '+ illust_count +'-3-0></span>レイヤ-'+illust_count+'-3<div id = layer_thum'+ illust_count +'-3></div></span>';
+								strHOGE +='								<ul id=layer1_1>';
+							strHOGE +='										<li "><span class="folder">バージョン'+illust_count+'-3-1</span>';
+								strHOGE +='												<ul id=version1_1_1>';
+								strHOGE +='													<li id="closed"><span class="folder">バージョン'+illust_count+'-3-2</li>';
+								strHOGE +='												</ul>';
+								strHOGE +='									</li>';
+								strHOGE +='								</ul>';
+								strHOGE +='						';
+								strHOGE +='		</li>';
+
+
+*/
+
+
+
+													  
+													  
+													  
+													  
+													  
+													  
+								strHOGE +='';
+								strHOGE +='				';
+								strHOGE +='				';
+								strHOGE +='				';
+								strHOGE +='				';
+								strHOGE +='				';
+								strHOGE +='				</ul>';
+								strHOGE +='		</li>';
+								//alert(strHOGE);
+
+
+					 
+					 
+					 
+					 
+					 
+					 document.getElementById("TreeView").innerHTML =document.getElementById("TreeView").innerHTML   + strHOGE;
+  
+								illust_count = illust_count + 1;
+					}
+								illust_count = 1;
+			$("#TreeView").treeview();
+//roop_show_all_illust();
+													  }
+/*For文で描く内容終わり*/
+
+
+
+
+
+</script>
+</form>
+
+		<div  style="position: relative; left:0%; top: -120px;">
+			<!--<input type="button"id="illustbutton2"  onclick="(illust_set();" class="clear" value="イラスト一覧">-->
+
+		<input onclick="openData(callVersionId);" type="button" class="clear btn btn-primary btn-lg"  value="OPEN DATA"><br><br>
+		<!--<input onclick="illust_set()" type="button" class="clear" value="イラストの数だけセットを展開"><br><br>--><!--このイラストセットって関数はサーバ上のイラストの数だけイラストセットを用意しますって関数-->
+
+
+	
+		
+<div id='mini_svg_box' class='scr' style= "border:1px solid #2291e6;" width="1116px" height:"700px">
+	
+	<ul id="TreeView" class="filetree"></ul><!--このulは後付け-->
+	
+	<ul id="browser" class="treeview"></ul><!--ここでツリーの一階層を形成-->
+	
+	<ul id="TreeView" class="filetree"></ul>
+	
+</div>
+		</div>
+
+<!--
+		<input type="button" value="次のイラストを表示
+			" onClick="javascript:show_all_illust();" style="position:absolute; top:1500px; left:200px;">
+
+				<input type="button" value="一枚目のミニSVGを消す
+			" onClick="javascript:remove_tag('0');" style="position:absolute; top:1600px; left:200px;">
+
+				<input type="button" value="イラスト全部表示
+			" onClick="javascript:roop_show_all_illust();" style="position:absolute; top:1550px; left:200px;">
+			
+				<input type="button" value="イラストを新規登録
+			" onclick="javascript:setnewillust(illust_no_kazu);" style="position:absolute; top:1450px; left:200px;">
+
+				<input type="button" value="111を出力
+			" onclick="javascript:openData(1,1,1);" style="position:absolute; top:1400px; left:200px;">
+				
+				<input type="button" value="111を111に挿入
+			" onclick="javascript:insert_thum(3,1);" style="position:absolute; top:1350px; left:200px;">
+				
+				<input type="button" value="各レイヤーにサムネイルを挿入
+			" onclick="javascript:insert_thum_all_layer();" style="position:absolute; top:1300px; left:200px;">
+
+				<input type="button" value="callVersionId
+			" onclick="javascript:call_version_id(1,1,0);" style="position:absolute; top:1250px; left:200px;">
+				<input type="button" value="click_version
+			" onclick="javascript:click_version(4,1,'1_1_1_1');" style="position:absolute; top:1200px; left:200px;">
+
+				<input  id="this_" type="button" value="レイヤーをクリックした際にバージョンIDと親のIDをセット
+			" onclick="javascript:layer_my_id(3,1,0);" style="position:absolute; top:1150px; left:200px;">
+	
+				<input type="button" value="callVersionId_count
+			" onclick="javascript:call_version_id_count_id(1,'1_1_1',4);" style="position:absolute; top:1100px; left:200px;">
+			
+				<input type="button" value="UNDO
+			" onclick="javascript:undo();" style="position:absolute; top:1050px; left:200px;">
+	
+				<input type="button" class= "btnOpen"  value="新しいバージョンを登録(set_new_version)
+			" onclick="javascript:set_New_Version(document.Sample12_form.CallIllustId.value,document.Sample11_form.CallLayerNum.value,document.Sample10_form.CallVersionNum.value); set_new_version_alert(0)" style="position:absolute; top:1000px; left:200px;">
+	
+				-->
+				<input type="button" id = "loading_on"  value="loading_on
+			" style="position:absolute; top:950px; left:200px;"  onclick="version_wo_kakunou()">
+				<input type="button" id = "loading_on"  value="ima_hikidasita_maisuu()
+			" style="position:absolute; top:1000px; left:200px;"  onclick="ima_hikidasita_maisuu2()">
+				<input type="button" id = "loading_on"  value="svg_box_set()
+			" style="position:absolute; top:1100px; left:200px;"  onclick="svg_box_set2()">
+				<input type="button" id = "loading_on"  value="svg_box_set3()
+			" style="position:absolute; top:1150px; left:200px;"  onclick="svg_box_set3()">
+				<input type="button" id = "loading_on"  value="next_page()
+			" style="position:absolute; top:1200px; left:200px;"  onclick= "next_page()">
+				<input type="button" id = "loading_on"  value="old_page()
+			" style="position:absolute; top:1250px; left:200px;"  onclick= "old_page()">
+
+
+
+
+
+			
+
+				<a href = "#"class="btn btn-primary btn-lg btnOpen"  style = "position: relative; top:-585px; left:200px" >新規バージョンを登録</a>
+				<a href = "#"class="btn btn-primary btn-lg btnOpen2"  style = "position: relative; top:-585px; left:200px" >新規イラストを登録</a>
+
+
+
+			
+			<script>
+
+
+
+//_______________________________________________________________バージョンを登録するときの確認画面
+jQuery(function ($) {
+		/*
+		   	 * preventDefault / stopPropagation を使った例
+			 	 */
+		$('.btnOpen').click(function () {
+			// ボタンが押されたら、モーダルウィンドウを表示
+			$('.windowBg').show();
+			return false;
+			});
+
+		$('.windowBg').click(function () {
+			// 背景がクリックされたら、ウィンドウを閉じる
+			$('.windowBg').hide();
+			return false;
+			});
+
+		$('.windowBody').click(function (event) {
+			// ウィンドウ/の中身をクリックしても、閉じないようにする
+			// (親である .windowBg への伝播を止める)
+			event.stopPropagation();
+			});
+
+		$('.btnClose').click(function (event) {
+			// 閉じるボタンのイベントをキャンセルする
+			// (親である .windowBg への伝播は行う → ウィンドウは閉じられる)
+			event.preventDefault();
+			});
+});
+
+
+
+
+//____________________________バージョン登録をおしたとき
+
+
+jQuery(function ($) {
+		/*
+		   	 * preventDefault / stopPropagation を使った例
+			 	 */
+		$('.btnOpen').click(function () {
+			// ボタンが押されたら、モーダルウィンドウを表示
+			$('.windowBg').show();
+			return false;
+			});
+
+		$('.windowBg').click(function () {
+			// 背景がクリックされたら、ウィンドウを閉じる
+			$('.windowBg').hide();
+			return false;
+			});
+
+		$('.windowBody').click(function (event) {
+			// ウィンドウの中身をクリックしても、閉じないようにする
+			// (親である .windowBg への伝播を止める)
+			event.stopPropagation();
+			});
+
+		$('.btnClose').click(function (event) {
+			// 閉じるボタンのイベントをキャンセルする
+			// (親である .windowBg への伝播は行う → ウィンドウは閉じられる)
+			event.preventDefault();
+			});
+});
+
+
+
+//______________________イラスト登録を推したとき
+
+
+
+jQuery(function ($) {
+		/*
+		   	 * preventDefault / stopPropagation を使った例
+			 	 */
+		$('.btnOpen2').click(function () {
+			// ボタンが押されたら、モーダルウィンドウを表示
+			$('.windowBg2').show();
+			return false;
+			});
+
+		$('.windowBg2').click(function () {
+			// 背景がクリックされたら、ウィンドウを閉じる
+			$('.windowBg2').hide();
+			return false;
+			});
+
+		$('.windowBody2').click(function (event) {
+			// ウィンドウの中身をクリックしても、閉じないようにする
+			// (親である .windowBg への伝播を止める)
+			event.stopPropagation();
+			});
+
+		$('.btnClose2').click(function (event) {
+			// 閉じるボタンのイベントをキャンセルする
+			// (親である .windowBg への伝播は行う → ウィンドウは閉じられる)
+			event.preventDefault();
+			});
+});
+
+
+
+
+
+
+
+
+
+function ckBtn(button){
+//alert('id=' + button.class);
+
+$(button).addClass("kaihou!!!");
+
+
+}
+
+
+
+
+/*
+$(function(){
+	$("div").click(function(){
+
+	alert($(this).parent().attr("id"));//ここのエラー直せ
+	alert($(this).attr("id"));//ここのエラー直せ
+*/
+
+	$('layer1').on('click',function(){
+
+		
+//		function layer_id(){
+		var id = $(this).attr("id");
+		alert(id);
+		});
+
+
+
+
+
+function sotogawa(){console.log("外側！");
+
+	alert($(this).attr("id"));//ここのエラー直せ
+		alert($(this).parent().attr("id"));//ここのエラー直せ
+
+					}
+function utigawa(){console.log("内側！")
+
+					event.stopPropagation();
+
+					}
+
+
+			</script>
+
+
+
+
+
+
+
+				<script>
+				function remove_closed(){//この関数によってタグのclosedをけしておきかえることで、ツリーにAddしても閉じてしまわないようになった。
+				
+				//$(".collapsable").attr('id',"kaihou1");
+			$(".collapsable").addClass("kaihou");
+				$(".kaihou").removeClass("closed");
+				//kaihou がついてるものは一度展開したもの
+				//$("#kaihou1").removeClass("closed");
+
+				console.log("REMOVE LOSEDが起動")
+			//$(this).className = "this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+				//$("#kaihou").removeClass("closed");
+				//$("#kaihou!!!").removeClass("closed collapsable");
+				//document.getElementById('kaihou!!!').className = "collapsable";
+				//$("#kaihou").removeClass('closed collapsable');
+				//$("#kaihou").removeClass('closed collapsable');
+				//$("#kaihou!!!").addClass('collapsaable');
+				}
+
+
+
+/*
+				$('input').on('click',function(){
+					$(this).attr('id',"this!!!");
+				
+				});//idが無くてもIDを作ってくれる。これを利用してclosedをけしなさい。
+
+*/
+				//function removeclass(){
+				//$('div').on('click',function(){
+				//	$(this).attr('id',"this!!!!!!!!!!!!!!!!");
+					//alert(this.id);
+				//});//idが無くてもIDを作ってくれる。これを利用してclosedをけしなさい。
+				//}
+
+				</script>
+		<script>
+
+var time_thum1 = 0;
+var time_thum2 = 0;
+var time_thum3 = 0;
+
+
+
+function insert_thum_all_layer3(i){
+
+		var white_canvas = '<rect x="0" y="0" width="958" height="480" fill="white"/>';
+	
+		document.getElementById("layer_thum"+ i +"-"+1).innerHTML = '<svg viewBox="0 0 958 480" style= "width:200;border:1px solid#2291e6;margin:10px" >' +  white_canvas + illust_image[i][0]  +'</svg>';
+
+		
+		
+		document.getElementById("layer_thum"+ i +"-"+2).innerHTML = '<svg viewBox="0 0 958 480" style= "width:200;border:1px solid#2291e6;margin:10px" >' +  white_canvas + illust_image[i][1]  +'</svg>';
+		
+		
+		
+		document.getElementById("layer_thum"+ i +"-"+3).innerHTML = '<svg viewBox="0 0 958 480" style= "width:200;border:1px solid#2291e6;margin:10px" >' +  white_canvas + illust_image[i][2]  +'</svg>';
+
+		
+		console.log("insert_thum_all_layer3が起動");
+
+
+}
+
+
+function insert_thum_all_layer(i){
+//	for(var i=1; i < illust_no_kazu; i++){
+
+//				for(var j=1; j<4 ;j++){
+//			console.log("レイヤーを引き出し！");
+			window.setTimeout("insert_thum1(" + i + ",1)",time_thum1);
+
+//			time_thum = time_thum + 300;
+			window.setTimeout("insert_thum2(" + i + ",2)",time_thum2);
+//			time_thum = time_thum + 300;
+			window.setTimeout("insert_thum3(" + i + ",3)",time_thum3);
+//			time_thum = 1000;
+			//			};
+//		}
+//	}
+}
+
+function insert_thum_all_layer2(){
+//	for(var i=1; i < illust_no_kazu; i++){
+//		for(var j=1; j<4 ;j++){
+//			console.log("レイヤーを引き出し！");
+			
+//			window.setTimeout("insert_thum(1,1)",time_thum1);
+
+//			time_thum = time_thum + 300;
+			window.setTimeout("insert_thum(1,2)",time_thum2);
+//			time_thum = time_thum + 300;
+//			window.setTimeout("insert_thum(1,3)",time_thum3);
+//			time_thum = 1000;
+			//			};
+//		}
+//	}
+}
+
+
+
+
+/*
+	
+	for(var i=0;i < illust_no_kazu;i++){
+				window.setTimeout("show_all_illust()",time);
+				time = time + 300;
+				}
+
+			time = 1000;
+
+   */
+
+function insert_thum_version(){
+loading_on();
+console.log("insert_thum_versionが起動");
+	setTimeout("insert_thum_version1()",300);
+}
+
+
+
+
+//____________________クリックするとオリジナルバージョンのサムネとすり替える
+function insert_thum_version1(){//指定したイラスト番号とレイヤ番号のオリジナルバージョンのサムネをそれぞれのレイヤ階層に挿入する
+
+	var illust2 =  document.Sample12_form.CallIllustId.value;
+	var layer2 = document.Sample11_form.CallLayerNum.value;
+	var version2 = document.Sample9_form.CallVersionId.value;
+//	var version2 = "36";
+
+
+	$.ajax({
+			type: 'GET',
+			url: 'callingtest.php',
+			data: {
+				cverid:version2,
+				},
+
+			success: function(data) {
+				console.log('OK');
+		dldata = data;
+//			console.log(dldata+"aaa");
+//			svgElm.html(dldata);
+//			set_layer(dldata);
+			
+
+open_data1 = dldata;
+			open_data1 = '<svg viewBox="0 0 958 480" style=width:200>' + open_data1 + '</svg>';
+	console.log("すり替え発生！");
+
+			
+			},
+			error: function(data) {
+
+				console.log('NG');
+			}
+		});
+
+
+
+	
+	
+	
+	
+//open_data1 = ThumopenData1(illust,layer,0);
+//console.log(open_data1);
+
+	time1 = setInterval(function(){
+
+			if(open_data1 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>'){
+					//insert_thum_version1();
+								
+								ThumopenData1_2(illust,layer,0);
+								console.log(open_data1 +"がopen_data1なのでまだ展開できません。");
+			}else{
+								document.getElementById("layer_thum"+illust2+"-"+layer2).innerHTML =open_data1;
+								clearInterval(time1);
+								open_data1 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>';
+								
+								dldata_thum1 = 0;
+								console.log('レイヤー一枚目の情報を取得したのでループから脱出');
+
+								setTimeout('loading_off()',300);
+
+								
+			}
+	},30);
+
+
+}
+
+
+
+						
+$.ajax({
+			type: 'GET',
+			url: 'callingtest.php',
+			data: {
+				cverid:cverid,
+				},
+
+			success: function(data) {
+				console.log('OK');
+		dldata = data;
+			console.log(dldata+"aaa");
+			svgElm.html(dldata);
+//			set_layer(dldata);
+
+			
+			},
+			error: function(data) {
+
+				console.log('NG');
+			}
+		});
+
+
+
+
+
+
+
+
+
+
+
+var open_data1 = '<svg viewBox="0 0 958 480" style=width:200>0</svg>';
+function insert_thum1(illust,layer){//指定したイラスト番号とレイヤ番号のオリジナルバージョンのサムネをそれぞれのレイヤ階層に挿入する
+	loading_on();
+//	open_data1 = ThumopenData1(illust,layer,0);
+console.log(open_data1);
+		time1 = setInterval(function(){
+
+			if(open_data1 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>'){
+								ThumopenData1(illust,layer,0);
+//								console.log(open_data1 +"がopen_data1なのでまだ展開できません。");
+								console.log("まだレイヤー１のサムネイルを取得できません。");
+			}else{
+								document.getElementById("layer_thum"+illust+"-"+layer).innerHTML =open_data1;
+								clearInterval(time1);
+								open_data1 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>';
+								
+								dldata_thum1 = 0;
+								console.log('レイヤー１のサムネイルを取得しました。!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+								setTimeout(loading_off(),300);
+								}
+							},60);
+	}
+
+
+
+
+var open_data2 = '<svg viewBox="0 0 958 480" style=width:200>0</svg>';
+function insert_thum2(illust,layer){//指定したイラスト番号とレイヤ番号のオリジナルバージョンのサムネをそれぞれのレイヤ階層に挿入する
+			//	open_data2 = ThumopenData2(illust,layer,0);
+				console.log(open_data2);
+		time2 = setInterval(function(){
+
+			if(open_data2 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>'){
+							ThumopenData2(illust,layer,0);
+							console.log("まだレイヤー２のサムネイルを取得できません");
+			}else{
+								document.getElementById("layer_thum"+illust+"-"+layer).innerHTML =open_data2;
+								clearInterval(time2);
+								open_data2 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>';
+								
+								dldata_thum2 = 0;
+								console.log('レイヤー２のサムネイルを取得しました!!!!!!!??????????');
+
+								}
+							},30);
+		
+	}
+
+
+
+
+var open_data3 = 1;
+function insert_thum3(illust,layer){//指定したイラスト番号とレイヤ番号のオリジナルバージョンのサムネをそれぞれのレイヤ階層に挿入する
+							ThumopenData3(illust,layer,0);
+							console.log(open_data3);
+		time3 = setInterval(function(){
+
+			if(open_data3 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>'){
+								ThumopenData3(illust,layer,0);
+			console.log("レイヤー３のサムネイルを取得できません");
+								}else{
+								document.getElementById("layer_thum"+illust+"-"+layer).innerHTML =open_data3;
+								clearInterval(time3);
+								open_data3 == '<svg viewBox="0 0 958 480" style=width:200>0</svg>';
+								
+								dldata_thum3 = 0;
+								console.log('レイヤー３のサムネイルを取得しました?????????????????????');
+
+								}
+							},30);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function show_all_layer(illust_number){
+
+		console.log(illust_number);
+		open_illust_by_illust_id(illust_number,1,0);
+		
+		
+}
+
+var time = 1000;
+
+var path1 = 0;
+var path2 = 0;
+var path3 = 0;
+
+var count_illust = 1;//全部イラストを表示するときに何枚目のイラストなのかをカウントする。
+
+var roop_show_all_illust_check = 0;
+
+
+
+
+console.log(illust_image[7]);
+
+
+
+
+//________________________________________________________
+
+function roop_show_all_illust(){
+
+//		document.getElementById("mini_svg_box").innerHTML = "";
+	
+	for(var i=0;i < illust_no_kazu;i++){
+				window.setTimeout("show_all_illust()",time);
+				time = time + 700;//重くてうまくイラストが表示できない時に増やせ
+				}
+
+			time = 1000;
+
+		console.log("今の配列番号は" + i);
+		count_illust = 1;//イラストをまた１枚目から表示すること
+		count_div    = 1;//サムネイルのIDを１からにリセットすること
+}
+
+
+function remove_tag(id_name){
+
+$("#0").remove();
+illust_no_kazu = 10000;
+
+}
+		
+
+//目標ののデータを３枚引き出してpath123とし、縮小する。
+
+
+function make_mini_illust(illust_id){//イラストID、レイヤ番号、親のIDを入力するだけでデータを引き出す関数
+
+
+open_illust_by_illust_id_2(illust_id,1,0);//指定したバージョンのデータを引き出してpath1に登録する
+
+open_illust_by_illust_id_2(illust_id,2,0);
+
+open_illust_by_illust_id_2(illust_id,3,0);
+
+
+}
+
+
+
+
+
+function show_all_illust(){
+
+		illust_no_kazu = 10000;
+
+
+		make_mini_illust(count_illust);
+		hello(path1,path2,path3);
+
+		console.log(count_illust + "カウントイラストは今この数字");
+		count_illust = count_illust + 1;
+}
+//var count_div=1;
+
+
+							
+							
+							
+							
+							
+							
+function assignment_data_for_path(path_number,data){//レイヤー番号とデータを入れると対応したpath(変数名)に代入してくれる
+					
+				
+									if(path_number == 1){
+										path1 = data;
+										illust_image[count_illust] = new Array();
+										illust_image[count_illust][0] = data;
+										console.log(illust_image[count_illust][0] + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+										//console.log("path1に"+path1+"を代入しました");
+									}else if(path_number == 2){
+										path2 = data;
+										//console.log("path2に"+path2+"を代入しました");
+
+									}else if(path_number ==3){
+										path3 = data;
+										//console.log("path3に"+path3+"を代入しました");
+
+									}else{
+										console.log("想定外のpathナンバーが代入されたようだぜ");
+
+									
+									set_layer(dldata);
+									
+									}
+				
+							}
+
+
+							
+						var count_div =1;
+				function hello(layer1,layer2,layer3){/*set_layerで設定されたpath要素群を重ねてid=minisvgのdivタグに入れる。*/
+						
+							var for_canvas1 = layer1;
+							var for_canvas2 = layer2;
+							var for_canvas3 = layer3;
+
+/*
+							var for_canvas1 = $("#drawingCanvas").prop('innerHTML');
+							var for_canvas2 = $("#drawingCanvas2").prop('innerHTML');
+							var for_canvas3 = $("#drawingCanvas3").prop('innerHTML');
+
+ */
+							
+							var white_canvas = '<rect x="0" y="0" width="958" height="480" fill="white"/>';
+							var plus_viewbox = "<div id =li"+count_div+"   style= \"border:1px; height:100px; width:200px; solid #2291e6;\"><svg viewBox='0 0 958 480' style= 'width:200'><a xlink:href='#'><g onclick=\"show_all_layer(count_illust)\">" 
+
+
+
+								+ white_canvas
+								+ for_canvas3 
+								+ for_canvas2  
+								+ for_canvas1  
+
+								+"</a></svg></div>";//liをつけて階層にする
+							
+
+							
+							next_box = count_div;
+///							document.getElementById("browser").innerHTML = document.getElementById("browser").innerHTML + '<li ' + "id=div" + count_div +  "><span class='folder'>";
+
+						
+
+						
+
+
+								console.log(next_box);
+							
+
+							
+
+
+							var illust_id = 0;
+							illust_id = "illust" + count_div;
+							console.log(illust_id);
+
+//							document.getElementById("illust_thum" + count_div).innerHTML = plus_viewbox;
+
+							count_div = count_div - 1;
+																	  document.getElementById("illust_thum" + count_div).innerHTML = document.getElementById("illust_thum" + count_div).innerHTML + plus_viewbox;
+
+							count_div = count_div + 1;
+																	  
+							count_div =count_div +1;
+
+///							console.log(plus_viewbox);
+
+								for_canvas3 = 0;
+								for_canvas2 = 0;
+								for_canvas1 = 0;//9月6日に追加
+
+
+
+
+				}
+
+
+
+
+
+
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+				function hello2(layer1,layer2,layer3){/*レイヤーごとにサムネを作成する。*/
+						
+							var for_canvas1 = layer1;
+							var for_canvas2 = layer2;
+							var for_canvas3 = layer3;
+
+/*
+							var for_canvas1 = $("#drawingCanvas").prop('innerHTML');
+							var for_canvas2 = $("#drawingCanvas2").prop('innerHTML');
+							var for_canvas3 = $("#drawingCanvas3").prop('innerHTML');
+
+ */
+							
+							var white_canvas = '<rect x="0" y="0" width="958" height="480" fill="white"/>';
+							var plus_viewbox = "no word";
+
+																	  
+																	  
+																	  
+																	  
+
+							plus_viewbox = "<div id =li"+count_div+"   style= \"border:1px; height:100px; width:200px; solid #2291e6;\"><svg viewBox='0 0 958 480' style= 'width:200'><a xlink:href='#'><g onclick=\"show_all_layer(count_illust)\">" 
+
+
+
+								+ white_canvas
+								+ for_canvas3 
+								+ for_canvas2  
+								+ for_canvas1  
+
+								+"</a></svg></div>";//liをつけて階層にする
+							
+
+							
+							next_box = count_div;
+///							document.getElementById("browser").innerHTML = document.getElementById("browser").innerHTML + '<li ' + "id=div" + count_div +  "><span class='folder'>";
+
+
+
+						
+
+
+								console.log(next_box);
+							
+
+							
+
+
+							var illust_id = 0;
+							illust_id = "illust" + count_div;
+							console.log(illust_id);
+//							document.getElementById("illust_thum" + count_div).innerHTML = plus_viewbox;
+							document.getElementById("illust_thum" + count_div).innerHTML = document.getElementById("illust_thum" + count_div).innerHTML + plus_viewbox;
+
+							count_div =count_div +1;
+
+///							console.log(plus_viewbox);
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*イラストを全部開く時に使うIDたち*/
+
+ var 	illust_id_for_all,
+		version_number_for_all,
+		layer_id_for_all;
+
+
+//open_illust_by_illust_id(1,1,0);
+
+
+
+function open_illust_by_illust_id(illust_id,layer_number,version_number){//イラストIDとレイヤナンバーを指定したデータを引き出す。
+
+	//受け取ったイラストIdレイヤーナンバー、バージョンナンバーを代入
+		illust_id_for_all 		= illust_id;
+		layer_id_for_all 		= layer_number;
+		version_number_for_all 	= version_number;
+
+
+$.ajax({
+			type: 'POST',
+			url: 'openAllIllust.php',
+			data: {
+				cvernum:version_number_for_all,//すべてのイラストを呼び出したいので親のIDが０
+				clayid:layer_id_for_all,//レイヤーのナンバーが指定
+				cillustid:illust_id_for_all//イラストのIDが指定
+				},
+
+			success: function(data) {
+				console.log('OK');
+		dldata = data;
+			//console.log(dldata+"をよびだしました！");
+			//svgElm.html(dldata);
+			assignment_data_for_path(layer_number,dldata);//指定されたレイヤーナンバーのpathにdldataを代入した
+			
+			},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+
+}
+
+
+
+
+
+
+function open_illust_by_illust_id_2(illust_id,layer_number,version_number){//イラストIDとレイヤナンバーを指定したデータを引き出す。
+
+	//受け取ったイラストIdレイヤーナンバー、バージョンナンバーを代入
+		illust_id_for_all 		= illust_id;
+		layer_id_for_all 		= layer_number;
+		version_number_for_all 	= version_number;
+
+
+$.ajax({
+			type: 'POST',
+			url: 'openAllIllust.php',
+			data: {
+				cvernum:version_number_for_all,//すべてのイラストを呼び出したいので親のIDが０
+				clayid:layer_id_for_all,//レイヤーのナンバーが指定
+				cillustid:illust_id_for_all//イラストのIDが指定
+				},
+
+			success: function(data) {
+				console.log('OK');
+		dldata = data;
+			//console.log(dldata+"をよびだしました！");
+			//svgElm.html(dldata);
+			assignment_data_for_path(layer_number,dldata);//指定されたレイヤーナンバーのpathにdldataを代入した
+			
+			},
+			error: function(data) {
+				console.log('NG');
+			}
+		});
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//console.log(open_illust_by_illust_id(1,1,0));
+
+function svg_box_set3(){
+
+	
+	var white_canvas = '<rect x="0" y="0" width="958" height="480" fill="white"/>';
+
+	for(var i = (pagesuu-1)*iti_page_no_kazu + 1 ; i  <= pagesuu * iti_page_no_kazu; i++){
+
+
+
+
+
+			illust_image_conbine[i] = white_canvas + illust_image[i][2] + illust_image[i][1] + illust_image[i][0]  ;
+			//console.log("illust_image[" + i + "][0] は！"+ illust_image[i][0]);
+			console.log(illust_image_conbine[i]);
+
+			document.getElementById("illust" + (i - (pagesuu-1) * iti_page_no_kazu)).innerHTML = illust_image_conbine[i];
+
+//						alert("["+ i +"][0]は" + illust_image[i][0]);
+//						alert("["+ i +"][1]は" + illust_image[i][1]);
+//						alert("["+ i +"][2]は" + illust_image[i][2]);
+
+
+
+
+}
+
+
+}
+
+function svg_box_set2(){
+
+	document.getElementById("mini_svg_box").innerHTML = "";
+
+	document.getElementById("mini_svg_box").innerHTML = 
+		  '<svg id = "illust1" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(1)" >0</svg>'
+		+ '<svg id = "illust2" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(2)" >0</svg>'
+		+ '<svg id = "illust3" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(3)" >0</svg>' 
+		+ '<svg id = "illust4" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(4)" >0</svg>'
+		+ '<svg id = "illust5" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(5)" >0</svg>'
+		+ '<svg id = "illust6" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(6)" >0</svg>'
+		+ '<svg id = "illust7" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(7)" >0</svg>'
+		+ '<svg id = "illust8" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(8)" >0</svg>'
+		+ '<svg id = "illust9" viewBox="0 0 958 480"   style= "width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(9)" >0</svg>'
+		+ '<svg id = "illust10" viewBox="0 0 958 480"  style="width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(10)" >0</svg>'
+		+ '<svg id = "illust11" viewBox="0 0 958 480"  style="width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(11)" >0</svg>'
+		+ '<svg id = "illust12" viewBox="0 0 958 480"  style="width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(12)" >0</svg>'
+		+ '<svg id = "illust13" viewBox="0 0 958 480"  style="width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(13)" >0</svg>'
+		+ '<svg id = "illust14" viewBox="0 0 958 480"  style="width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(14)" >0</svg>'
+		+ '<svg id = "illust15" viewBox="0 0 958 480"  style="width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(15)" >0</svg>'
+		+ '<svg id = "illust16" viewBox="0 0 958 480"  style="width:200;border:1px solid#2291e6;margin:10px" onclick = "illust_set2(16)" >0</svg>';
+
+												 
+												 
+												 
+//	document.getElementById("mini_svg_box").innerHTML = '<svg id = "illust1" viewBox="0 0 958 480"  style= "width:200;border:1px solid#2291e6;margin:10px">0</svg><svg id = "illust2" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust3" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust4" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust5" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust6" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust7" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust8" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust9" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust10" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust11" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust12" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust13" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust14" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust15" viewBox="0 0 958 480"  style=width:200>0</svg><svg id = "illust16" viewBox="0 0 958 480"  style=width:200>0</svg>';
+
+																			
+			svg_box_set3();
+																			
+}
+
+
+
+
+//__________________________________________________________________
+//まったく新しくイラストの引き出す関数を作る
+//__________________________________________________________________
+
+var iti_page_no_kazu = 16;
+var mawaru_kaisu = Math.floor(illust_no_kazu / iti_page_no_kazu);
+var amari = illust_no_kazu % iti_page_no_kazu;
+var pagesuu = 1;
+var ima_hikidasita_maisuu = 0;
+var max_pagesuu = Math.ceil(illust_no_kazu % iti_page_no_kazu);
+
+
+function ima_hikidasita_maisuu2(){
+
+	if(illust_no_kazu >= iti_page_no_kazu * pagesuu){
+	
+		loading_on();
+		version_wo_kakunou();
+		time20 = setInterval(function(){
+			console.log(ima_hikidasita_maisuu);
+			if(ima_hikidasita_maisuu == iti_page_no_kazu * 3){
+			loading_off();
+			ima_hikidasita_maisuu = 0;
+			svg_box_set2();
+			clearInterval(time20);
+			}
+		},1);
+
+
+	}else{
+
+	if(illust_no_kazu < iti_page_no_kazu * pagesuu){
+		amari = illust_no_kazu % iti_page_no_kazu;
+		console.log("illust_no_kazu = "+ illust_no_kazu + "であまりに突入したよ！");
+		console.log("amari = "+ amari + "であまりに突入したよ！");
+		loading_on();
+		version_wo_kakunou();
+		time20 = setInterval(function(){
+			console.log(ima_hikidasita_maisuu);
+			if(ima_hikidasita_maisuu == (amari - 1) * 3){
+			loading_off();
+			ima_hikidasita_maisuu = 0;
+			svg_box_set2();
+			clearInterval(time20);
+			}
+		},1);
+
+	}
+}
+}
+
+
+function version_wo_kakunou_hairetu_sengen(){
+
+
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 1] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 2] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 3] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 4] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 5] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 6] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 7] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 8] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 9] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 10] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 11] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 12] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 13] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 14] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 15] = new Array();
+					illust_image[((pagesuu-1)* iti_page_no_kazu) + 16] = new Array();
+
+}
+
+
+
+function version_wo_kakunou(){
+
+
+
+
+		if((pagesuu * iti_page_no_kazu) < illust_no_kazu ){
+
+
+
+						version_wo_kakunou_hairetu_sengen();//すべての配列の2次元目を宣言
+
+
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 1] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][0] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 1,1,0);
+//						alert(illust_image[1][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 2] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][0] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 2,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 3] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][0] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 3,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 4] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][0] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 4,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][0]);
+
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 5] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][0] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 5,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 6] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][0] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 6,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 7] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][0] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 7,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 8] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][0] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 8,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][0]);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 9] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][0] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 9,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 10] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][0] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 10,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 11] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][0] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 11,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 12] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][0] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 12,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][0]);
+
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 13] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][0] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 13,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 14] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][0] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 14,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 15] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][0] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 15,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][0]);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 16] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][0] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 16,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][0]);
+
+
+//_________________________________こっからレイヤー２
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][1] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 1,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][1] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 2,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][1] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 3,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][1] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 4,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][1] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 5,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][1] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 6,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][1] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 7,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][1] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 8,2,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][1] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 9,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][1] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 10,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][1] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 11,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][1] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 12,2,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][1] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 13,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][1] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 14,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][1] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 15,2,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][1] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 16,2,0);
+
+
+//_______________________________________レイヤー３
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][2] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 1,3,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 2,3,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][2] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 3,3,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][2] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 4,3,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][2] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 5,3,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 6,3,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][2] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 7,3,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][2] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 8,3,0);
+
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][2] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 9,3,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 10,3,0);
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 11,3,0);
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][2] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 12,3,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][2] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 13,3,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 14,3,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][2] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 15,3,0);
+
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][2] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 16,3,0);
+
+
+
+		}else{
+
+				if(((pagesuu -1 ) * iti_page_no_kazu ) < illust_no_kazu ){
+
+
+					version_wo_kakunou_hairetu_sengen();//すべての配列の2次元目を宣言
+
+
+
+						if(amari > 1){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 1] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][0] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 1,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][0]);
+						console.log("イラスト番号"+ ((pagesuu-1)* iti_page_no_kazu) + 1 +"は"+ illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][0] +"!!!!!!!!!!!!!!!!!!!????????");
+						}
+						if(amari > 2){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 2] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][0] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 2,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][0]);
+						}
+						if(amari > 3){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 3] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][0] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 3,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][0]);
+						}
+						if(amari > 4){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 4] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][0] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 4,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][0]);
+						}
+						if(amari > 5){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 5] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][0] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 5,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][0]);
+						}
+						if(amari > 6){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 6] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][0] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 6,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][0]);
+						}
+						if(amari > 7){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 7] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][0] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 7,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][0]);
+						}
+						if(amari > 8){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 8] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][0] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 8,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][0]);
+						}
+						if(amari > 9){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 9] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][0] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 9,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][0]);
+						}
+						if(amari > 10){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 10] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][0] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 10,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][0]);
+						}
+						if(amari > 11){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 11] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][0] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 11,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][0]);
+						}
+						if(amari > 12){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 12] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][0] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 12,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][0]);
+						}
+						if(amari > 13){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 13] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][0] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 13,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][0]);
+						}
+						if(amari > 14){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 14] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][0] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 14,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][0]);
+						}
+						if(amari > 15){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 15] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][0] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 15,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][0]);
+						}
+						if(amari > 16){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 16] = new Array();
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][0] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 16,1,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][0]);
+						}
+
+
+
+//_________________________________こっからレイヤー２
+						if(amari > 1){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][1] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 1,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][1]);
+						}
+						if(amari > 2){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][1] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 2,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][1]);
+						}
+						if(amari > 3){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][1] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 3,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][1]);
+						}
+						if(amari > 4){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][1] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 4,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][1]);
+						}
+						if(amari > 5){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][1] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 5,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][1]);
+						}
+						if(amari > 6){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][1] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 6,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][1]);
+						}
+						if(amari > 7){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][1] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 7,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][1]);
+						}
+						if(amari > 8){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][1] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 8,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][1]);
+						}
+						if(amari > 9){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][1] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 9,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][1]);
+						}
+						if(amari > 10){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][1] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 10,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][1]);
+						}
+						if(amari > 11){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][1] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 11,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][1]);
+						}
+						if(amari > 12){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][1] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 12,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][1]);
+						}
+						if(amari > 13){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][1] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 13,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][1]);
+						}
+						if(amari > 14){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][1] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 14,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][1]);
+						}
+						if(amari > 15){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][1] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 15,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][1]);
+						}
+						if(amari > 16){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][1] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 16,2,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][1]);
+						}
+
+//_______________________________________レイヤー３
+
+
+						if(amari > 1){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][2] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 1,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 1][2]);
+						}
+						if(amari > 2){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 2,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 2][2]);
+						}
+						if(amari > 3){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][2] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 3,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 3][2]);
+						}
+						if(amari > 4){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][2] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 4,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 4][2]);
+						}
+						if(amari > 5){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][2] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 5,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 5][2]);
+						}
+						if(amari > 6){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 6,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 6][2]);
+						}
+						if(amari > 7){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][2] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 7,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 7][2]);
+						}
+						if(amari > 8){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][2] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 8,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 8][2]);
+						}
+						if(amari > 9){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][2] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 9,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 9][2]);
+						}
+						if(amari > 10){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 10,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 10][2]);
+						}
+						if(amari > 11){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][2] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 11,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 11][2]);
+						}
+						if(amari > 12){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][2] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 12,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 12][2]);
+						}
+						if(amari > 13){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][2] = call_one_version(((pagesuu-1)* iti_page_no_kazu) + 13,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 13][2]);
+						}
+						if(amari > 14){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][2] = call_one_version1(((pagesuu-1)* iti_page_no_kazu) + 14,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 14][2]);
+						}
+						if(amari > 15){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][2] = call_one_version2(((pagesuu-1)* iti_page_no_kazu) + 15,3,0);
+						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 15][2]);
+						}
+						if(amari > 16){
+						illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][2] = call_one_version3(((pagesuu-1)* iti_page_no_kazu) + 16,3,0);
+//						alert(illust_image[((pagesuu-1)* iti_page_no_kazu) + 16][2]);
+						}
+
+
+
+
+
+
+
+
+
+				}
+
+			}
+}
+
+
+
+
+
+function call_one_version(illust_id,layer_number,version_number){//イラストIDとレイヤナンバーを指定したデータを引き出す。
+
+	//受け取ったイラストIdレイヤーナンバー、バージョンナンバーを代入
+		illust_id_for_all 		= illust_id;
+		layer_id_for_all 		= layer_number;
+		version_number_for_all 	= version_number;
+
+
+	var result = $.ajax({
+			type: 'POST',
+			url: 'openAllIllust.php',
+			data: {
+				cvernum:version_number_for_all,//すべてのイラストを呼び出したいので親のIDが０
+				clayid:layer_id_for_all,//レイヤーのナンバーが指定
+				cillustid:illust_id_for_all//イラストのIDが指定
+				},
+
+
+			async: false,
+		}).responseText;
+
+
+		ima_hikidasita_maisuu = ima_hikidasita_maisuu + 1;
+
+		return result;
+
+}
+
+
+
+
+
+function call_one_version1(illust_id,layer_number,version_number){//イラストIDとレイヤナンバーを指定したデータを引き出す。
+
+	//受け取ったイラストIdレイヤーナンバー、バージョンナンバーを代入
+		illust_id_for_all 		= illust_id;
+		layer_id_for_all 		= layer_number;
+		version_number_for_all 	= version_number;
+
+
+	var result = $.ajax({
+			type: 'POST',
+			url: 'openAllIllust.php',
+			data: {
+				cvernum:version_number_for_all,//すべてのイラストを呼び出したいので親のIDが０
+				clayid:layer_id_for_all,//レイヤーのナンバーが指定
+				cillustid:illust_id_for_all//イラストのIDが指定
+				},
+
+
+																	  
+			async: false,
+		}).responseText;
+
+		ima_hikidasita_maisuu = ima_hikidasita_maisuu + 1;
+																	  
+		return result;
+
+}
+
+
+
+function call_one_version2(illust_id,layer_number,version_number){//イラストIDとレイヤナンバーを指定したデータを引き出す。
+
+	//受け取ったイラストIdレイヤーナンバー、バージョンナンバーを代入
+		illust_id_for_all 		= illust_id;
+		layer_id_for_all 		= layer_number;
+		version_number_for_all 	= version_number;
+
+
+	var result = $.ajax({
+			type: 'POST',
+			url: 'openAllIllust.php',
+			data: {
+				cvernum:version_number_for_all,//すべてのイラストを呼び出したいので親のIDが０
+				clayid:layer_id_for_all,//レイヤーのナンバーが指定
+				cillustid:illust_id_for_all//イラストのIDが指定
+				},
+
+
+																	  
+			async: false,
+		}).responseText;
+
+		ima_hikidasita_maisuu = ima_hikidasita_maisuu + 1;
+																	  
+		return result;
+
+}
+
+
+
+function call_one_version3(illust_id,layer_number,version_number){//イラストIDとレイヤナンバーを指定したデータを引き出す。
+
+	//受け取ったイラストIdレイヤーナンバー、バージョンナンバーを代入
+		illust_id_for_all 		= illust_id;
+		layer_id_for_all 		= layer_number;
+		version_number_for_all 	= version_number;
+
+
+	var result = $.ajax({
+			type: 'POST',
+			url: 'openAllIllust.php',
+			data: {
+				cvernum:version_number_for_all,//すべてのイラストを呼び出したいので親のIDが０
+				clayid:layer_id_for_all,//レイヤーのナンバーが指定
+				cillustid:illust_id_for_all//イラストのIDが指定
+				},
+
+
+																	  
+			async: false,
+		}).responseText;
+
+		ima_hikidasita_maisuu = ima_hikidasita_maisuu + 1;
+																	  
+		return result;
+
+}
+
+
+
+//___________________________________________________________ここからサムネイルをクリックしたときの挙動
+
+
+
+	function illust_set2(kono_page_no_nannmaimeka){
+		illust_no_kazu = parseInt(illust_no_kazu) + 1;//変更を加えた
+		console.log(illust_no_kazu + "がイラストテーブルの行数＋１");
+	
+					 
+					 illust_count = kono_page_no_nannmaimeka +( pagesuu - 1) * iti_page_no_kazu;
+//					 for(var i=1;i<illust_no_kazu;i++){
+								var strHOGE =　new String();
+								/*for文で描く内容*/
+								
+					 strHOGE +='	<li class="closed"  onclick = "insert_thum_all_layer3('+ illust_count  +'); console.log(this.id)"><span class="folder">イラスト'+illust_count+'<div id="illust_thum'+illust_count+'"></div></span>';//ここでdivタグを挟むことでフォルダの画像をクリックしないと展開しなくなった一度押すとclassにkaihouが追加される。二度目以降はkaihouを含むかを確認して中身の追加をやめる
+								strHOGE +='				<ul id=illust'+ illust_count +'>';
+
+						
+//レイヤ１__________________________________________________________________________
+					  strHOGE +='						<li  id = '+ illust_count +'-1  onclick = "click_layer('+ illust_count +',1,0); ckBtn(this); insert_thum_version()"><span class ="folder"><span id = '+ illust_count +'-1-0></span>オリジナルレイヤ-'+ illust_count +'-1<div id = layer_thum'+ illust_count +'-1></div></span>';//liのidにそのバージョンのIDを格納click_layerはクリックしたことがあるかを確認→したことがなければ下のバージョンを追加、なければ何もしない
+					  			strHOGE +='								<ul id=karioki>';//これがないと＋ボタンが消えちまう
+								strHOGE +='		';
+								strHOGE +='										';
+								strHOGE +='								</ul>'; //追加したときに閉じてしまわなくはなったけど、このパーツを取ったときに崩れてしまう。20170524
+								strHOGE +='						';
+								strHOGE +='				</li>';
+								strHOGE +='';
+								strHOGE +='';
+//レイヤ２___________________________________________________________________________
+										   
+
+
+						strHOGE +='						<li  id = '+ illust_count +'-2  onclick = "click_layer('+ illust_count +',2,0); ckBtn(this); insert_thum_version()"><span class ="folder"><span id = '+ illust_count +'-2-0></span>オリジナルレイヤ-'+ illust_count +'-2<div id = layer_thum'+ illust_count +'-2></div></span>';//liのidにそのバージョンのIDを格納click_layerはクリックしたことがあるかを確認→したことがなければ下のバージョンを追加、なければ何もしない
+					  			strHOGE +='								<ul id=karioki>';//これがないと＋ボタンが消えちまう
+								strHOGE +='		';
+								strHOGE +='										';
+								strHOGE +='								</ul>'; //追加したときに閉じてしまわなくはなったけど、このパーツを取ったときに崩れてしまう。20170524
+								strHOGE +='						';
+								strHOGE +='				</li>';
+								strHOGE +='';
+								strHOGE +='';
+//レイヤ３___________________________________________________________________________
+	
+
+
+						strHOGE +='						<li  id = '+ illust_count +'-3  onclick = "click_layer('+ illust_count +',3,0); ckBtn(this); insert_thum_version()"><span class ="folder"><span id = '+ illust_count +'-3-0></span>オリジナルレイヤ-'+ illust_count +'-3<div id = layer_thum'+ illust_count +'-3></div></span>';//liのidにそのバージョンのIDを格納click_layerはクリックしたことがあるかを確認→したことがなければ下のバージョンを追加、なければ何もしない
+					  			strHOGE +='								<ul id=karioki>';//これがないと＋ボタンが消えちまう
+								strHOGE +='		';
+								strHOGE +='										';
+								strHOGE +='								</ul>'; //追加したときに閉じてしまわなくはなったけど、このパーツを取ったときに崩れてしまう。20170524
+								strHOGE +='						';
+								strHOGE +='				</li>';
+								strHOGE +='';
+								strHOGE +='';
+//___________________________________________________________________________
+	
+				  
+								strHOGE +='';
+								strHOGE +='				';
+								strHOGE +='				';
+								strHOGE +='				';
+								strHOGE +='				';
+								strHOGE +='				';
+								strHOGE +='				</ul>';
+								strHOGE +='		</li>';
+								//alert(strHOGE);
+
+					  document.getElementById("mini_svg_box").innerHTML = '<ul id ="TreeView" class = "filetree treeview" >'   + strHOGE +"</ul>";
+  
+//								illust_count = illust_count + 1;
+//					}
+//								illust_count = 1;
+			$("#TreeView").treeview();
+//roop_show_all_illust();
+
+}
+
+
+
+	function next_page(){
+		max_pagesuu =  Math.ceil(illust_no_kazu / iti_page_no_kazu);
+					  
+		if(pagesuu < max_pagesuu){
+		pagesuu = pagesuu + 1;
+		console.log("今のページ数は" + pagesuu);
+		console.log("MAXのページ数は" + max_pagesuu);
+					  ima_hikidasita_maisuu2();
+
+					  }else{
+		console.log("今のページ数は" + pagesuu);
+		alert("最後のページです");
+		console.log("MAXのページ数は" + max_pagesuu);
+					  }
+
+
+	}
+
+
+	function old_page(){
+		var min_pagesuu =  1;
+					  
+					  if(pagesuu > 1){
+		pagesuu = pagesuu - 1;
+		ima_hikidasita_maisuu2();
+
+					  }else{
+		alert("最初のページです");
+					  }
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		</script>
+</body>
+</div>
+</html>
